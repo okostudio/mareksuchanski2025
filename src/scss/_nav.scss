@@ -1,0 +1,35 @@
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+
+    .container {
+        align-items: left;
+    }
+
+    .nav-logo img {
+        height: 5em;
+        width: auto;
+    }
+
+    .nav-menu-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+
+        svg {
+            width: 3em;
+            height: auto;
+
+            .white {
+                fill: none;
+                stroke: #fff;
+                stroke-linecap: round;
+                stroke-miterlimit: 10;
+                stroke-width: 2.5px;
+            }
+        }
+    }
+}
