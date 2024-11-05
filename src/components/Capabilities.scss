@@ -1,0 +1,88 @@
+$green: #1B7777;
+$black: #000;
+$white: #fff;
+$red: #f35035;
+$beige: #ece8e7;
+$light: #f9f9ff;
+
+
+.capabilities {
+    // min-height: 90vh;
+    // background-image: url('/img/bg-circles.svg');
+    // background-image: url('/img/backgrounds/fruitloops.009.png');
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    min-height: auto;
+    padding: 4em 6em;
+
+    .capabilities__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        .capabilities__description {
+            padding-left: 3em;
+        }
+    }
+
+    .capabilities__content {
+        display: grid;
+        // grid-template-columns: 1fr;
+        // grid-template-rows: auto auto;
+        // grid-column-gap: 16px;
+        // grid-row-gap: 24px;
+        margin: 0 auto;
+        width: 100%;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        grid-column-gap: 24px;
+        padding: 80px 0;
+        grid-row-gap: 48px;
+
+        .capabilities__item {
+            position: relative;
+
+            .capabilities__item__image {
+                background-color: $green;
+                max-width: 100%;
+                transition: all 0.4s;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                display: block;
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+
+                img {
+                    max-width: 100%;
+                    transition: all 0.4s;
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    border-radius: 8px;
+
+                    mix-blend-mode: subtract;
+                }
+            }
+
+
+            .capabilities__item__description {
+                text-align: left;
+                padding: 0.3em;
+                opacity: 0.6;
+
+                h3 {
+                    margin-top: 0.7em;
+                }
+            }
+        }
+
+    }
+
+}

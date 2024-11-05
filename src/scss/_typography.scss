@@ -1,3 +1,20 @@
+body,
+#root {
+    font-size: 18px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 20px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        font-size: 20px;
+    }
+}
+
 h1,
 h2,
 h3,
@@ -8,11 +25,25 @@ h4 {
     margin-bottom: 0.5em;
 }
 
-p {
-    margin-bottom: 2em;
+p,
+.p1 {
+    margin-bottom: 0.7em;
+}
+
+.p2 {
+    font-size: 1em;
+}
+
+.p3 {
+    font-size: 0.8em;
+    line-height: 1.1;
 }
 
 h1 {
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
 }

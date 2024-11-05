@@ -12,8 +12,7 @@ $light: #f9f9ff;
 @use './scss/nav';
 
 body {
-
-  font-size: 20px;
+  background-color: $green;
   font-family: 'PPFragment Sans';
   font-weight: 300;
   background-color: $light;
@@ -33,61 +32,16 @@ body {
   text-align: center;
 }
 
-section {
-  position: relative;
-  display: flex;
-  align-items: stretch;
-  height: 100%;
-  min-height: 100vh;
-
-  &.red {
-    background-color: $red;
-  }
-
-  &.green {
-    background-color: $green;
-  }
-
-  &.black {
-    background-color: $black;
-  }
-}
-
-.container {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-
-  margin: 0 auto;
+.noise {
+  position: fixed;
   width: 100%;
-  max-width: 1280px;
-  padding: 0 2em;
-  z-index: 0;
-
-  &.left {
-    align-items: center;
-    justify-content: flex-start;
-    text-align: left;
-  }
-
-  .col-2 {
-    position: relative;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: inherit;
-    align-items: inherit;
-  }
-
-  .arch {
-    position: absolute;
-    top: 0;
-    left: -2em;
-    width: calc(100% + 2em);
-    height: 100%;
-    backdrop-filter: blur(25px);
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 0 0 40vh 0;
-    z-index: -1;
-  }
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(/img/noise.jpg);
+  opacity: 0.4;
+  mix-blend-mode: overlay;
+  // background-blend-mode: overlay;
+  pointer-events: none;
+  user-select: none;
 }

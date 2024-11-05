@@ -1,9 +1,9 @@
-import React from "react";
+// import React from "react";
 import "./Hero.scss"
 
 const Hero = () => {
     return (
-        <section className="hero light">
+        <section className="hero green">
             <div className="container left">
                 <div className="col-2">
                     <div className="arch"></div>

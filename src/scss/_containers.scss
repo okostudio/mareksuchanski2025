@@ -1,0 +1,75 @@
+$green: #1B7777;
+$dark: #223;
+$black: #000;
+$white: #fff;
+$red: #f35035;
+$beige: #ece8e7;
+$light: #f9f9ff;
+
+
+section {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    min-height: 100vh;
+
+    &.beige {
+        background-color: $beige;
+    }
+
+    &.red {
+        background-color: $red;
+    }
+
+    &.green {
+        background-color: $green;
+    }
+
+    &.dark {
+        background-color: $dark;
+    }
+
+    &.black {
+        background-color: $black;
+    }
+}
+
+.container {
+    position: relative;
+
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 2rem;
+    z-index: 0;
+
+    &.left {
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .col-2 {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: inherit;
+        align-items: inherit;
+    }
+
+    .arch {
+        position: absolute;
+        top: 0;
+        left: -50vw;
+        width: calc(100% + 50vw);
+        height: 100%;
+        backdrop-filter: blur(25px);
+        background: rgba($light, 0.2);
+        background: linear-gradient(90deg, rgba($light, 0.0) 0%, rgba($light, 0.15) 20%, rgba($light, 0.2) 30%);
+
+        border-radius: 0 0 40vh 0;
+        z-index: -1;
+    }
+}

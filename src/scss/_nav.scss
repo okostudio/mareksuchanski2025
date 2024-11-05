@@ -5,11 +5,13 @@ nav {
     width: 100%;
 
     .container {
+        display: flex;
         align-items: left;
+        justify-content: flex-start;
     }
 
     .nav-logo img {
-        height: 5em;
+        height: 5rem;
         width: auto;
     }
 
@@ -20,7 +22,7 @@ nav {
         cursor: pointer;
 
         svg {
-            width: 3em;
+            width: 3rem;
             height: auto;
 
             .white {

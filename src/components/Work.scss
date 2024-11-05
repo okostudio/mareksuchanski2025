@@ -1,0 +1,64 @@
+.work {
+    // min-height: 90vh;
+    // background-image: url('/img/bg-circles.svg');
+    // background-image: url('/img/backgrounds/fruitloops.009.png');
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    min-height: auto;
+    padding: 4em 2em;
+
+    .work__title {
+        padding: 0em 4em;
+    }
+
+    .work__content {
+        display: grid;
+        // grid-template-columns: 1fr;
+        // grid-template-rows: auto auto;
+        // grid-column-gap: 16px;
+        // grid-row-gap: 24px;
+        margin: 0 auto;
+        width: 100%;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        grid-column-gap: 24px;
+        padding: 80px 0;
+        grid-row-gap: 48px;
+
+
+        .work__item {
+            position: relative;
+
+            .work__item__image {
+                max-width: 100%;
+                transition: all 0.4s;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                display: block;
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+
+                img {
+                    max-width: 100%;
+                    transition: all 0.4s;
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    border-radius: 8px;
+                }
+            }
+
+            .work__item__description {
+                text-align: left;
+                padding: 0.3em;
+                opacity: 0.6;
+            }
+        }
+    }
+}
