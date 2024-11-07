@@ -14,19 +14,25 @@
 
     .quotes {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto, auto);
         grid-column-gap: 4em;
         grid-row-gap: 0px;
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
 
         .logo {
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
             padding: 1em;
 
             svg {
                 height: 2em;
+                margin-bottom: 1em;
             }
 
             &.saatchi {
