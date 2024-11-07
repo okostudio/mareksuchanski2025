@@ -2,6 +2,15 @@ footer {
     background-color: #223;
     flex-direction: column;
     min-height: auto;
-    padding: 4em 4em;
     color: white;
+
+    padding: 3em 0;
+
+    @media (min-width: 768px) {
+        padding: 3em 2em;
+    }
+
+    @media (min-width: 1024px) {
+        padding: 4em 6em;
+    }
 }

@@ -16,7 +16,7 @@ const WorkItem = (props) => {
 
 const Work = () => {
     return (
-        <section className="work light">
+        <section className="work beige">
             <div className="container center">
                 <div>
                     <div className="work__title">
@@ -28,21 +28,32 @@ const Work = () => {
             </div>
             <div className="work__content">
                 <WorkItem
-                    img="/img/work/geeely-E5-demo-FINAL.jpg"
-                    description="Geely - Animated mockup"
+                    img="/img/work/WPT5122_Lotus_A.jpg"
+                    description="Westpac - social and digital display campaign"
                 />
                 <WorkItem
-                    img="/img/work/Rail_Dodgem_15_1920x1080-draftRender.jpg"
-                    description="Funlab - Social videos"
+                    img="/img/work/ziwi-01.jpg"
+                    description="ZIWI - social and digital display campaign"
+                />
+
+                <WorkItem
+                    img="/img/work/enviz-module.jpg"
+                    description="ENVIZ - website animation"
                 />
                 <WorkItem
-                    img="/img/work/WSGA_3001879_Hendricks_Summer-Social-BRAND-KeyVisual-PROGRAMATIC-1920x1080-7s.jpg"
-                    description="Hendrick's Gin - Social videos"
+                    img="/img/work/export-ultra-thebeerforhere.jpg"
+                    description="Export Ultra - social and digital display campaign"
                 />
                 <WorkItem
-                    img="/img/work/3001421_MTOV_Creatives_green.jpg"
-                    description="Victoria State Government - Social videos"
+                    img="/img/work/pet_direct_wegetpet.jpg"
+                    description="PetDirect - social and digital display campaign"
                 />
+                <WorkItem
+                    img="/img/work/southern-cross-gp-01.jpg"
+                    description="Southern Cross Insurance - social and digital display campaign"
+                />
+
+
             </div>
         </section >
     );

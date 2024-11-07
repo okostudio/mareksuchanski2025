@@ -22,7 +22,7 @@ const CapabilitiesItem = (props) => {
 
 const Capabilities = () => {
     return (
-        <section className="capabilities beige">
+        <section className="capabilities light">
             <div className="container left">
 
 
@@ -53,9 +53,19 @@ const Capabilities = () => {
                         description="We can take your static campaigns, slice them up, and bring them to life with scroll-stopping animation"
                     />
                     <CapabilitiesItem
+                        img="/img/capabilities/capabilities-02.svg"
+                        title="Website Development"
+                        description="Whatever the end size, we are here to make your work look schmick"
+                    />
+                    <CapabilitiesItem
                         img="/img/capabilities/capabilities-04.svg"
-                        title="3D Animation / Experiences"
+                        title="3D Animation"
                         description="Take your work to a new dimention"
+                    />
+                    <CapabilitiesItem
+                        img="/img/capabilities/capabilities-02.svg"
+                        title="Literally anything!"
+                        description="Whatever the end size, we are here to make your work look schmick"
                     />
 
                 </div>

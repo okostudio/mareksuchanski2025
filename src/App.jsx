@@ -14,8 +14,8 @@ function App() {
       <Nav />
       <Hero />
       <Testemonials />
-      <Work />
       <Capabilities />
+      <Work />
       <ContactUs />
       <Footer />
       <div className="noise"></div>
