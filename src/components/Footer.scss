@@ -1,5 +1,7 @@
+@use '../scss/variables' as *;
+
 footer {
-    background-color: #223;
+    background-color: $dark;
     flex-direction: column;
     min-height: auto;
     color: white;
