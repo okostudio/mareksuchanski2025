@@ -40,6 +40,7 @@
         position: absolute;
         top: 0;
         left: -2em;
+        width: calc(100% + 4em);
         min-width: calc(414px + 1em);
         height: 100%;
         backdrop-filter: blur(20px);
