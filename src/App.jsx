@@ -13,6 +13,7 @@ function App() {
     <>
       <Nav />
       <Hero />
+      <div className="fade"></div>
       <Testemonials />
       <Capabilities />
       <Work />

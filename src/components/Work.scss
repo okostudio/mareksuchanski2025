@@ -9,10 +9,18 @@
     background-repeat: no-repeat;
     flex-direction: column;
     min-height: auto;
-    padding: 4em 2em;
+    padding: 4em 1em;
 
     .work__title {
-        padding: 0em 4em;
+        padding: 0em 2em;
+    }
+
+    @media (min-width: 414px) {
+        padding: 4em 2em;
+
+        .work__title {
+            padding: 0em 4em;
+        }
     }
 
     .work__content {
@@ -86,10 +94,12 @@
                 .work__item__image {
                     filter: saturate(1);
 
-                    img {
-                        -webkit-transform: scale(1.02);
-                        transform: scale(1.02);
-                        filter: saturate(1);
+                    @media (min-width: 768px) {
+                        img {
+                            -webkit-transform: scale(1.02);
+                            transform: scale(1.02);
+                            filter: saturate(1);
+                        }
                     }
 
                     &::after {
