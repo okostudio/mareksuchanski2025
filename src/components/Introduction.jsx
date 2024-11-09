@@ -14,14 +14,14 @@ const logos = ["/img/logos/logo-confitex.svg",
     "/img/logos/logo-heineken.svg",
     "/img/logos/logo-petdirect.svg",
     "/img/logos/logo-purenz.svg",
-    "/img/logos/logo-rush.svg",
+    "/img/logos/logo-ziwi.svg",
     "/img/logos/logo-scti.svg",
     "/img/logos/logo-stihl.svg",
     "/img/logos/logo-threenow.svg",
     "/img/logos/logo-westpac.svg",
     "/img/logos/logo-yates.svg",
     "/img/logos/logo-z-energy.svg",
-    "/img/logos/logo-ziwi.svg"]
+]
 
 const Introduction = () => {
     return (

@@ -1,27 +1,20 @@
-import './App.scss'
-import Nav from './components/Nav'
-import Hero from './components/Hero'
-// import Testemonials from './components/Testemonials'
-import Capabilities from './components/Capabilities'
-import Work from './components/Work'
-import Footer from './components/Footer'
-import ContactUs from './components/ContactUs'
-import Introduction from './components/Introduction'
+import { Route, Routes } from "react-router-dom"
+import HomePage from "./pages/HomePage"
+import WorkPage from "./pages/WorkPage"
+import WorkDetailPage from "./pages/WorkDetailPage"
+import Page404 from "./pages/Page404"
 
 function App() {
 
   return (
     <>
-      <Nav />
-      <Hero />
-      <div className="fade"></div>
+      <Routes>
 
-      <Introduction />
-      <Capabilities />
-      <Work />
-      <ContactUs />
-      <Footer />
-      <div className="noise"></div>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/work/" element={<WorkPage />} />
+        <Route path="/work/:slug" element={<WorkDetailPage slug={"slug"} />} />
+        <Route path="*" element={<Page404 />} />
+      </Routes>
 
     </>
   )

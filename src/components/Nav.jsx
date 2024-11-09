@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
 
@@ -12,7 +13,9 @@ const Nav = () => {
         <nav>
             <div className="container">
                 <div className="nav-logo">
-                    <img src="/logo-okostudio.svg" alt="OKO Studio Logo" />
+                    <Link to={"/"}>
+                        <img src="/logo-okostudio.svg" alt="OKO Studio Logo" />
+                    </Link>
                 </div>
             </div>
             <div className="nav-menu-icon" onClick={() => { toggleNav() }}>

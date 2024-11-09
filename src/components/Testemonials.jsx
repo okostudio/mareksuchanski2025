@@ -1,6 +1,4 @@
 // import React from "react";
-import "./Testemonials.scss"
-
 const Testemonials = () => {
     return (
         <section className="testemonials light">
