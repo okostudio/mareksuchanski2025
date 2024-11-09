@@ -1,0 +1,37 @@
+@use '../variables' as *;
+
+.introduction {
+
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    min-height: auto;
+
+    h2 {
+        margin-bottom: 2em;
+        color: $green;
+    }
+
+    .brands {
+        h3 {
+            border-bottom: 0.5px dotted black;
+            padding: 0.4em 0;
+        }
+
+        .brands__content {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 6em);
+            grid-gap: 1em 1em;
+            justify-content: space-between;
+
+            img {
+                width: 100%;
+                height: auto;
+                opacity: 0.82;
+            }
+        }
+    }
+
+
+}

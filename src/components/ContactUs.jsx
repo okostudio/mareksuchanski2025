@@ -1,6 +1,3 @@
-// import React from "react";
-import "./ContactUs.scss"
-
 const ContactUs = () => {
     return (
         <section className="contact red">

@@ -1,16 +1,15 @@
-// import React from "react";
-import "./Capabilities.scss"
+
 
 const CapabilitiesItem = (props) => {
     return (
         <div className="capabilities__item">
+            <h4>
+                {props.title}
+            </h4>
             <div className="capabilities__item__image">
                 <img src={props.img} alt="" />
             </div>
             <div className="capabilities__item__description h4">
-                <h3>
-                    {props.title}
-                </h3>
                 <p className="p3">
                     {props.description}
                 </p>
@@ -22,7 +21,7 @@ const CapabilitiesItem = (props) => {
 
 const Capabilities = () => {
     return (
-        <section className="capabilities light">
+        <section className="capabilities beige">
             <div className="container left">
 
 
