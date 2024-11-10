@@ -1,8 +1,7 @@
 @use '../variables' as *;
 
 .hero {
-    // min-height: 95vh;
-    // background-image: url('/img/bg-circles.svg');
+    justify-content: flex-start;
     background-image: url('/img/backgrounds/fruitloops.011.jpg');
     background-position: center top;
     background-size: cover;
@@ -14,7 +13,7 @@
     }
 
 
-    .col-2 {
+    .left-col {
         position: relative;
         padding: 10em 0 6em 0;
         width: 100%;
@@ -24,14 +23,14 @@
     }
 
     @media (min-width: 768px) {
-        .col-2 {
+        .left-col {
             max-width: 60%;
             height: 100%;
         }
     }
 
     @media (min-width: 1024px) {
-        .col-2 {
+        .left-col {
             width: 50%;
         }
     }

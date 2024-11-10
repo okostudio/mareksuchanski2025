@@ -3,7 +3,7 @@ const Hero = () => {
     return (
         <section className="hero green">
             <div className="container left">
-                <div className="col-2">
+                <div className="left-col">
                     <div className="arch"></div>
                     <div>
                         <h1>

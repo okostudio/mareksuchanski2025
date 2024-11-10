@@ -1,4 +1,4 @@
-
+import { v4 as uuidv4 } from 'uuid';
 
 const BrandLogo = (props) => {
     return (
@@ -35,7 +35,7 @@ const OurBrands = () => {
                         <div className="brands__content">
                             {
                                 logos.map(logo => {
-                                    return <BrandLogo src={logo} key={"logo" + Math.random()} />
+                                    return <BrandLogo src={logo} key={uuidv4()} />
                                 })
                             }
                         </div>
