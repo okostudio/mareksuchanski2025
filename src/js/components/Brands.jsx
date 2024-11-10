@@ -23,17 +23,11 @@ const logos = ["/img/logos/logo-confitex.svg",
     "/img/logos/logo-z-energy.svg",
 ]
 
-const Introduction = () => {
+const OurBrands = () => {
     return (
-        <section className="introduction light">
+        <section className="our-brands light">
             <div className="container center">
-
                 <div>
-
-                    <h2>
-                        We&rsquo;re a versatile digital production agency, based in Melbourne, Sydney and Auckland. We specialise in rapid delivery with a high quality finish.
-                    </h2>
-
                     <div className="brands">
                         <h3>
                             Brands we&rsquo;ve helped
@@ -52,7 +46,7 @@ const Introduction = () => {
     );
 };
 
-export default Introduction;
+export default OurBrands;
 
 
 

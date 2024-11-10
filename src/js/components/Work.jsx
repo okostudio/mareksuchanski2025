@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom";
 
 
-// import React from "react";
-import "./Work.scss"
-
 const WorkItem = (props) => {
     return (
         <div className="work__item">

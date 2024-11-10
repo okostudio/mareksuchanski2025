@@ -1,8 +1,9 @@
+import './App.scss'
 import { Route, Routes } from "react-router-dom"
-import HomePage from "./pages/HomePage"
-import WorkPage from "./pages/WorkPage"
-import WorkDetailPage from "./pages/WorkDetailPage"
-import Page404 from "./pages/Page404"
+import HomePage from "./js/pages/HomePage"
+import WorkPage from "./js/pages/WorkPage"
+import WorkDetailPage from "./js/pages/WorkDetailPage"
+import Page404 from "./js/pages/Page404"
 
 function App() {
 

@@ -21,7 +21,7 @@ const CapabilitiesItem = (props) => {
 
 const Capabilities = () => {
     return (
-        <section className="capabilities beige">
+        <section className="capabilities light">
             <div className="container left">
 
 

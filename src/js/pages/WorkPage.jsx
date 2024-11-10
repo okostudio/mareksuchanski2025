@@ -1,15 +1,15 @@
-import '../App.scss'
+
 import Nav from '../components/Nav'
 import Work from '../components/Work'
 import Footer from '../components/Footer'
 import ContactUs from '../components/ContactUs'
 
-function WorkDetailPage(props) {
+function WorkPage() {
 
     return (
         <>
             <Nav />
-            <h1>{props.slug}</h1>
+
             <Work />
 
             <ContactUs />
@@ -20,4 +20,4 @@ function WorkDetailPage(props) {
     )
 }
 
-export default WorkDetailPage
+export default WorkPage

@@ -1,12 +1,9 @@
 @use '../variables' as *;
 
-.introduction {
-
-    background-position: center top;
-    background-size: contain;
-    background-repeat: no-repeat;
-    flex-direction: column;
+.our-brands {
+    height: auto;
     min-height: auto;
+
 
     h2 {
         margin-bottom: 2em;

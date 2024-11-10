@@ -1,11 +1,7 @@
-@use '../scss/variables' as *;
+@use '../variables' as *;
 
 .work {
-    background-position: center top;
-    background-size: contain;
-    background-repeat: no-repeat;
-    flex-direction: column;
-    min-height: auto;
+
     padding: 4em 1em;
 
     .work__title {

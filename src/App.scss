@@ -6,10 +6,11 @@
 
 @use './scss/components/nav';
 @use './scss/components/hero';
-@use './scss/components/introduction';
+@use './scss/components/about';
+@use './scss/components/ourbrands';
 @use './scss/components/capabilities';
+@use './scss/components/work';
 @use './scss/components/contactus';
-@use './scss/components/testemonials';
 @use './scss/components/footer';
 
 body {
@@ -56,6 +57,12 @@ body {
   top: 0;
 
   z-index: 10;
+}
 
+.vh100 {
+  height: 100vh;
+}
 
+.svh100 {
+  height: 100svh;
 }
