@@ -10,7 +10,7 @@ const PageData = {
             brand: "Westpac",
             client: "Saatch & Saatchi",
             description: {
-                short: "social and digital display campaign",
+                short: "Social and digital display campaign",
                 long: "Lorem ipsum dolor sic..."
             },
             images: [
@@ -31,12 +31,100 @@ const PageData = {
             brand: "Ziwi",
             client: "True",
             description: {
-                short: "social and digital display campaign",
+                short: "Social and digital display campaign",
                 long: "Lorem ipsum dolor sic..."
             },
             images: [
                 {
                     url: "/img/work/ziwi-01.jpg",
+                    title: "",
+                    description: ""
+                }
+            ]
+        },
+        {
+            url: "enviz",
+            brand: "Enviz",
+            jobName: "GSAP Animations and UI",
+            client: "Omaley Made",
+
+            mainImage: {
+                desktop: "/img/work/enviz-module.jpg",
+                mobile: "/img/work/enviz-module.jpg"
+            },
+            description: {
+                short: "Custom animaitons for the Enviz website",
+                long: "Enviz had built a webflow based website, and tasked us with creating custom animations using GSAP - an industry standard animation platform - that would integrate smoothly with their site. Timings were tight, and the limitations of the platform had to be worked around, but we nailed it"
+            },
+            images: [
+                {
+                    url: "/img/work/enviz-module.jpg",
+                    title: "",
+                    description: ""
+                }
+            ]
+        },
+        {
+            url: "the-beer-for-here",
+            brand: "Export ultra",
+            jobName: "The Beer For Here",
+            client: "Saatchi & Saatchi",
+
+            mainImage: {
+                desktop: "/img/work/export-ultra-thebeerforhere.jpg",
+                mobile: "/img/work/export-ultra-thebeerforhere.jpg"
+            },
+            description: {
+                short: "Social and digital display campaign",
+                long: "Lorem ipsum"
+            },
+            images: [
+                {
+                    url: "/img/work/export-ultra-thebeerforhere.jpg",
+                    title: "",
+                    description: ""
+                }
+            ]
+        },
+        {
+            url: "we-get-pet",
+            brand: "Pet Direct",
+            jobName: "We Get Pet",
+            client: "Pet Direct",
+
+            mainImage: {
+                desktop: "/img/work/pet_direct_wegetpet.jpg",
+                mobile: "/img/work/pet_direct_wegetpet.jpg"
+            },
+            description: {
+                short: "Social and digital display campaign",
+                long: "Lorem ipsum"
+            },
+            images: [
+                {
+                    url: "/img/work/pet_direct_wegetpet.jpg",
+                    title: "",
+                    description: ""
+                }
+            ]
+        },
+        {
+            url: "southern-cross-gp",
+            brand: "Southen Cross Health Insurance",
+            jobName: "GP Care",
+            client: "True",
+
+            mainImage: {
+                desktop: "/img/work/southern-cross-gp-01.jpg",
+                mobile: "/img/work/southern-cross-gp-01.jpg"
+            },
+            description: {
+                short: "Social and digital display campaign",
+                long: "Lorem ipsum"
+            },
+            images: [
+                {
+                    url: "/img/work/southern-cross-gp-01.jpg",
                     title: "",
                     description: ""
                 }
@@ -50,24 +138,3 @@ export default PageData;
 
 
 
-
-//                 <WorkItem
-//                     img="/img/work/enviz-module.jpg"
-//                     description="ENVIZ - website animation"
-//                     link="/work/enviz"
-//                 />
-//                 <WorkItem
-//                     img="/img/work/export-ultra-thebeerforhere.jpg"
-//                     description="Export Ultra - social and digital display campaign"
-//                     link="/work/export-ultra"
-//                 />
-//                 <WorkItem
-//                     img="/img/work/pet_direct_wegetpet.jpg"
-//                     description="PetDirect - social and digital display campaign"
-//                     link="/work/pet-direct"
-//                 />
-//                 <WorkItem
-//                     img="/img/work/southern-cross-gp-01.jpg"
-//                     description="Southern Cross Insurance - social and digital display campaign"
-//                     link="/work/southern-cross"
-//                 />

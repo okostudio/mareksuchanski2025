@@ -3,9 +3,9 @@ import { useEffect, useState } from 'react'
 import PageData from '../PageData'
 
 import Nav from '../components/Nav'
-import Work from '../components/Work'
 import Footer from '../components/Footer'
 import ContactUs from '../components/ContactUs'
+import Section from '../components/Section'
 
 
 function WorkDetailPage() {
@@ -25,9 +25,20 @@ function WorkDetailPage() {
     return (
         <>
             <Nav />
-            <h1>{pageData ? pageData.jobName : null}</h1>
-            <Work />
+            {pageData ?
+                <>
+                    <Section class="work-detail height-auto light">
+                        <div className="description">
 
+                            <h1><em>{pageData.brand}:</em> {pageData.jobName}</h1>
+                            <p>{pageData.description.long}</p>
+                        </div>
+                        <img src={pageData.mainImage.desktop} alt={pageData.jobName} className='img-cover' />
+
+
+                    </Section>
+                </>
+                : null}
             <ContactUs />
             <Footer />
             <div className="noise"></div>

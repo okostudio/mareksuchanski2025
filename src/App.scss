@@ -3,6 +3,7 @@
 @use './scss/typography';
 @use './scss/containers';
 @use './scss/buttons';
+@use './scss/heroimage';
 
 @use './scss/components/nav';
 @use './scss/components/hero';
@@ -59,6 +60,8 @@ body {
   z-index: 10;
 }
 
+
+// height settings
 .vh100 {
   height: 100vh;
 }
@@ -66,4 +69,14 @@ body {
 .svh100 {
   height: 100svh;
   min-height: 100svh;
+}
+
+.height-auto {
+  height: auto;
+  min-height: auto;
+}
+
+.img-cover {
+  width: 100%;
+  height: auto;
 }

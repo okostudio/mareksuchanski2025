@@ -1,6 +1,7 @@
 @use '../variables' as *;
 
-.work {
+.work,
+.work-detail {
 
     padding: 4em 1em;
 
@@ -14,6 +15,20 @@
         .work__title {
             padding: 0em 4em;
         }
+    }
+
+    .description {
+        margin: 4em 0 2em 0;
+        text-align: left;
+
+        h1 {
+            font-size: 2.0em;
+            text-transform: unset;
+            // color: $green;
+            opacity: 0.5;
+        }
+
+        p {}
     }
 
     .work__content {
