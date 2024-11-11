@@ -11,22 +11,24 @@
             display: flex;
             padding: 2em 0;
             flex-direction: column;
+            color: white;
 
             input,
             textarea {
                 margin: 0 0 1em 0;
                 font-size: 1.2em;
+                color: white;
 
                 background-color: transparent;
                 background: none;
                 outline: none;
-                border: 1px solid black;
+                border: 1px solid white;
                 border-radius: 1em;
                 padding: 0.5em 1em;
 
 
                 &::placeholder {
-                    color: black;
+                    color: white;
                     opacity: 0.6;
                 }
             }
@@ -35,6 +37,8 @@
                 width: 100%;
                 min-height: 7em;
             }
+
+
         }
     }
 }

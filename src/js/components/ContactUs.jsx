@@ -1,6 +1,8 @@
+import ContactForm from "../elements/ContactForm";
+
 const ContactUs = () => {
     return (
-        <section className="contact red">
+        <section className="contact dark">
             <div className="container center">
 
                 <div>
@@ -12,13 +14,14 @@ const ContactUs = () => {
                     <div className="contact__content">
                         <p>We&rsquo;d love to hear from you.</p>
 
-                        <form>
+                        {/* <form>
                             <input type="text" placeholder="email" />
                             <input type="text" placeholder="name" />
                             <div className="textarea">
                                 <textarea placeholder="write a few words" />
                             </div>
-                        </form>
+                        </form> */}
+                        <ContactForm />
                     </div>
 
                 </div>

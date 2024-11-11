@@ -1,21 +1,17 @@
-
-import Nav from '../components/Nav'
+import PageWrapper from './PageWrapper'
 import Hero from '../components/Hero'
-// import Testemonials from './components/Testemonials'
 import Capabilities from '../components/Capabilities'
 import Work from '../components/Work'
-import Footer from '../components/Footer'
-import ContactUs from '../components/ContactUs'
 import About from '../components/About'
 import OurBrands from '../components/Brands'
+
 
 function HomePage() {
 
     return (
-        <>
-            <Nav />
+        <PageWrapper>
             <Hero />
-            <div className="fade"></div>
+
 
             <About class="about light heightAuto">
                 <h2>
@@ -25,11 +21,7 @@ function HomePage() {
             <OurBrands />
             <Capabilities />
             <Work />
-            <ContactUs />
-            <Footer />
-            <div className="noise"></div>
-
-        </>
+        </PageWrapper>
     )
 }
 

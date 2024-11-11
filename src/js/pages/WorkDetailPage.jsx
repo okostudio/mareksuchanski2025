@@ -1,11 +1,8 @@
 
 import { useEffect, useState } from 'react'
 import PageData from '../PageData'
-
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
-import ContactUs from '../components/ContactUs'
 import Section from '../components/Section'
+import PageWrapper from './PageWrapper'
 
 
 function WorkDetailPage() {
@@ -23,8 +20,7 @@ function WorkDetailPage() {
     }, [])
 
     return (
-        <>
-            <Nav />
+        <PageWrapper>
             {pageData ?
                 <>
                     <Section class="work-detail height-auto light">
@@ -39,11 +35,7 @@ function WorkDetailPage() {
                     </Section>
                 </>
                 : null}
-            <ContactUs />
-            <Footer />
-            <div className="noise"></div>
-
-        </>
+        </PageWrapper>
     )
 }
 
