@@ -3,7 +3,7 @@
 .our-brands {
     height: auto;
     min-height: auto;
-    padding-top: 0;
+    padding: 0;
 
 
     h2 {
@@ -19,16 +19,39 @@
 
         .brands__content {
             display: grid;
-            grid-template-columns: repeat(auto-fill, 6em);
-            grid-gap: 1em 1em;
-            justify-content: space-between;
+            grid-auto-rows: 0;
+            grid-gap: 0 2em;
+            align-content: center;
+            align-items: center;
+            justify-items: center;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 3em 0;
+
+
+            @media (min-width: 992px) {
+                grid-template-columns: repeat(5, 1fr);
+                margin: 5em 0;
+            }
 
             img {
-                width: 100%;
+                width: 90%;
                 height: auto;
                 opacity: 0.82;
             }
         }
+
+        // .brands__content {
+        //     display: grid;
+        //     grid-template-columns: repeat(auto-fill, 6em);
+        //     grid-gap: 1em 1em;
+        //     justify-content: space-between;
+
+        //     img {
+        //         width: 100%;
+        //         height: auto;
+        //         opacity: 0.82;
+        //     }
+        // }
     }
 
 

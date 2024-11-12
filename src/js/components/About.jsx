@@ -7,8 +7,8 @@ const About = () => {
             <div className="container center">
                 <div>
                     <ScrollContainer>
-                        <h2>
-                            Your local digital production agency. Based in Melbourne, Sydney and Auckland. <span className="red">We make scroll stopping content for breakfast.</span>
+                        <h2 className="xl">
+                            We make <br />scroll stopping <br />content for breakfast.
                         </h2>
                     </ScrollContainer>
                 </div>
