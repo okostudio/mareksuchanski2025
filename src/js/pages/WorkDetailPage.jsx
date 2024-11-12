@@ -31,7 +31,6 @@ function WorkDetailPage() {
                         </div>
                         <img src={pageData.mainImage.desktop} alt={pageData.jobName} className='img-cover' />
 
-
                     </Section>
                 </>
                 : null}

@@ -1,11 +1,16 @@
+import ScrollContainer from "../animation/ScrollContainer";
 
 
-const About = (props) => {
+const About = () => {
     return (
-        <section className={(props.class ? props.class : null)}>
+        <section className="about light heightAuto" >
             <div className="container center">
                 <div>
-                    {props.children}
+                    <ScrollContainer>
+                        <h2>
+                            Your local digital production agency. Based in Melbourne, Sydney and Auckland. <span className="red">We make scroll stopping content for breakfast.</span>
+                        </h2>
+                    </ScrollContainer>
                 </div>
             </div>
         </section >

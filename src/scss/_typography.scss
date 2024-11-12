@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 body,
 #root {
     font-size: 16px;
@@ -13,6 +15,46 @@ body,
     @media (min-width: 1440px) {
         font-size: 24px;
     }
+}
+
+h1.red,
+h2.red,
+h3.red,
+h4.red,
+h5.red,
+p.red,
+span.red {
+    color: $red;
+}
+
+h1.green,
+h2.green,
+h3.green,
+h4.green,
+h5.green,
+p.green,
+span.green {
+    color: $green;
+}
+
+h1.black,
+h2.black,
+h3.black,
+h4.black,
+h5.black,
+p.black,
+span.black {
+    color: $black;
+}
+
+h1.white,
+h2.white,
+h3.white,
+h4.white,
+h5.white,
+p.white,
+span.white {
+    color: $white;
 }
 
 h1,
@@ -39,15 +81,31 @@ p,
     line-height: 1.1;
 }
 
+
 h1 {
     text-transform: uppercase;
-    font-size: 3em;
-}
-
-h2 {
     font-size: 2.5em;
 }
 
+h2 {
+    font-size: 2.0em;
+}
+
 h3 {
-    font-size: 1.8em;
+    font-size: 1.6em;
+}
+
+@media (min-width: 414px) {
+    h1 {
+        text-transform: uppercase;
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 1.8em;
+    }
 }

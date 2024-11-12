@@ -13,11 +13,7 @@ function HomePage() {
             <Hero />
 
 
-            <About class="about light heightAuto">
-                <h2>
-                    We&rsquo;re a versatile digital production agency, based in Melbourne, Sydney and Auckland. We specialise in rapid delivery with a high quality finish.
-                </h2>
-            </About>
+            <About />
             <OurBrands />
             <Capabilities />
             <Work />

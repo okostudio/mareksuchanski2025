@@ -50,7 +50,7 @@ const ContactForm = () => {
             );
 
             // Display success alert
-            toggleAlert('Form submission was successful!', 'success');
+            toggleAlert('Thank you! We&rsquo;ll be in touch ASAP', 'success');
         } catch (e) {
             console.error(e);
             // Display error alert
@@ -133,13 +133,15 @@ const ContactForm = () => {
                     </div>
                 </div>
 
-                <button
-                    className='black'
-                    disabled={disabled}
-                    type='submit'
-                >
-                    Send
-                </button>
+                <div>
+                    <button
+                        className='black'
+                        disabled={disabled}
+                        type='submit'
+                    >
+                        Send
+                    </button>
+                </div>
             </form>
 
             {alertInfo.display && (

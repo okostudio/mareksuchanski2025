@@ -26,11 +26,13 @@ const Capabilities = () => {
 
 
                 <div className="capabilities__title">
-                    <h3>
-                        Our <span className="green">capabilities</span> are centred around our ability to deliver world-class digital campaigns and award winning websites. Whether in banner ads, digital billboards, social videos or websites, we will bring our keen eye for detail, sense for motion.
-                    </h3>
+                    <h2>
+                        Our Capabilities
+                    </h2>
+                    <div className="capabilities__description">
+                        Our team have experience in across a wide range of technologies and tallents, all unifying by a keen eye for motion. Whether in banner ads, digital billboards, social videos or websites. We can confidently take on any digital production task.
+                    </div>
                 </div>
-
 
                 <div className="capabilities__content">
                     <CapabilitiesItem

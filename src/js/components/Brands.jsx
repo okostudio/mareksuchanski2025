@@ -8,7 +8,7 @@ const BrandLogo = (props) => {
 
 const logos = ["/img/logos/logo-confitex.svg",
     "/img/logos/logo-cricketnz.svg",
-    // "/img/logos/logo-eden.svg",
+    "/img/logos/logo-eden.svg",
     "/img/logos/logo-enviz.svg",
     "/img/logos/logo-f45.svg",
     "/img/logos/logo-heineken.svg",
@@ -29,9 +29,9 @@ const OurBrands = () => {
             <div className="container center">
                 <div>
                     <div className="brands">
-                        <h3>
+                        {/* <h3>
                             Brands we&rsquo;ve helped
-                        </h3>
+                        </h3> */}
                         <div className="brands__content">
                             {
                                 logos.map(logo => {
