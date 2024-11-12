@@ -14,8 +14,9 @@ const OurBrands = () => {
 
     useEffect(
         () => {
-            if (size > 1023) {
+            if (size.width > 1023) {
                 setIsMobile(false)
+                console.log("NOT MOBILE")
             } else {
                 setIsMobile(true)
                 console.log("IS MOBILE")
@@ -27,13 +28,13 @@ const OurBrands = () => {
     useGSAP(
         () => {
 
-
-            const rows = isMobile ? 5 : 3;
+            const mobile = window.innerWidth < 1024
+            const rows = mobile ? 5 : 3;
             const tl = new gsap.timeline({ repeat: -1 })
 
             for (let i = 0; i < rows; i++) {
                 let selector = ""
-                if (isMobile) {
+                if (mobile) {
                     selector = ".mobile_logo" + (i + 1)
                 } else {
                     selector = ".desktop_logo" + (i + 1)
