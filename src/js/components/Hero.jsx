@@ -57,6 +57,12 @@ const Hero = () => {
 
     return (
         <section className="hero green">
+            <div className="video-holder">
+                <video width="100%" height="100%" playsInline loop muted autoPlay>
+                    <source src="/video/particles-v3.mp4" type="video/mp4" />
+                    <source src="/video/particles-v3.webm" type="video/webm" />
+                </video>
+            </div>
             <div className="container left">
                 <div className="left-col">
                     <div className="arch"></div>
