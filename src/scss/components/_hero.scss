@@ -2,7 +2,8 @@
 
 .hero {
     justify-content: flex-start;
-    background-image: url('/img/backgrounds/fruitloops.011.jpg');
+    // background-image: url('/img/backgrounds/fruitloops.011.jpg');
+    background: $green;
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,6 +20,9 @@
         z-index: 0;
         top: 0;
 
+        video {
+            object-fit: cover;
+        }
     }
 
 
