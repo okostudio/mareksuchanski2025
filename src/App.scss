@@ -22,6 +22,16 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.3;
+
+  ::selection {
+    color: $dark;
+    background-color: $red;
+  }
+
+  .green::selection {
+    color: $light;
+    background-color: $red;
+  }
 }
 
 #root {
@@ -40,7 +50,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background: url(/img/noise-grain.gif);
+  // background: url(/img/noise-grain.gif);
   background-size: 240px 180px;
   opacity: 0.12;
   mix-blend-mode: overlay;

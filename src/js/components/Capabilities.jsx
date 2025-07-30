@@ -27,7 +27,7 @@ const Capabilities = () => {
 
                 <div className="capabilities__title">
                     <h3>
-                        Our <span className="green">capabilities</span> are centred around our ability to deliver world-class digital campaigns and award winning websites. Whether in banner ads, digital billboards, social videos or websites, we will bring our keen eye for detail, sense for motion.
+                        <span className="green">Our capabilities are centred around our ability to deliver world-class digital campaigns and award winning websites.</span> Whether in banner ads, digital billboards, social videos or websites, we will bring our keen eye for detail, sense for motion.
                     </h3>
                 </div>
 
@@ -40,18 +40,18 @@ const Capabilities = () => {
                     />
                     <CapabilitiesItem
                         img="/img/capabilities/capabilities-02.svg"
-                        title="Motion graphics"
-                        description="Whatever the end size, we are here to make your work look schmick"
-                    />
-                    <CapabilitiesItem
-                        img="/img/capabilities/capabilities-03.svg"
                         title="Social Ads & Videos"
                         description="We can take your static campaigns, slice them up, and bring them to life with scroll-stopping animation"
                     />
                     <CapabilitiesItem
-                        img="/img/capabilities/capabilities-02.svg"
+                        img="/img/capabilities/capabilities-03.svg"
                         title="Website Development"
-                        description="Whatever the end size, we are here to make your work look schmick"
+                        description="We can build rich and emmersive website from the ground up, or using any framework you like"
+                    />
+                    <CapabilitiesItem
+                        img="/img/capabilities/capabilities-02.svg"
+                        title="Interaction Design"
+                        description="The cherry on top of a great website, is a rich interactive experience"
                     />
                     <CapabilitiesItem
                         img="/img/capabilities/capabilities-04.svg"
@@ -61,7 +61,7 @@ const Capabilities = () => {
                     <CapabilitiesItem
                         img="/img/capabilities/capabilities-02.svg"
                         title="Literally anything!"
-                        description="Whatever the end size, we are here to make your work look schmick"
+                        description="If you have a vision, we can help you realize it"
                     />
 
                 </div>

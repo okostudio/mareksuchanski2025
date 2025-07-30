@@ -3,7 +3,7 @@ const Footer = () => {
         <footer>
             <div className="container">
                 <div className="footer__title">
-                    <p className="p3">&copy; OKO Studio 2024</p>
+                    <p className="p3">&copy; OKO Studio 2025</p>
                 </div>
             </div>
 

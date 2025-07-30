@@ -29,6 +29,7 @@ const Hero = () => {
                     scrollTrigger: {
                         trigger: scrollAnimation.current,
                         start: "top 85%",
+
                     }
                 });
                 tl.addLabel("start")
@@ -38,7 +39,7 @@ const Hero = () => {
                     duration: 0.5,
                     stagger: 0.07,
                     ease: "power3.out"
-                })
+                }, "+=0.5")
 
                 tl.from("button", {
                     opacity: 0,
@@ -56,30 +57,28 @@ const Hero = () => {
     )
 
     return (
-        <section className="hero green">
-            {/* <div className="video-holder">
+        <section className="hero light-blue">
+            <div className="video-holder">
                 <video width="100%" height="100%" playsInline loop muted autoPlay>
-                    <source src="/video/particles-v3.mp4" type="video/mp4" />
-                    <source src="/video/particles-v3.webm" type="video/webm" />
+                    <source src="/video/oko-reel.mp4" type="video/mp4" />
+                    <source src="/video/oko-reel.webm" type="video/webm" />
                 </video>
-            </div> */}
+            </div>
             <div className="container left">
                 <div className="left-col">
-                    <div className="arch"></div>
+
                     <div ref={scrollAnimation}>
                         <h1>
-                            Your <br />
-                            trusted <br />
-                            digital <br />
-                            production <br />
-                            partner.
+                            Technical <br />
+                            firepower<span></span>for <br />
+                            creative<span></span>&amp; <br />
+                            digital<span></span>teams.
                         </h1>
 
                         <div className="card">
                             <p className='p1'>
                                 100’s of dispatched campaigns. <br />
-                                1000’s of banners, videos, <br />
-                                emails, websites & more.
+                                1000’s of banners, videos, websites & more.
                             </p>
                             <button className='red'>Get in touch</button>
                         </div>

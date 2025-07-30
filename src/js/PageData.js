@@ -1,6 +1,50 @@
 const PageData = {
     work: [
         {
+            url: "enviz",
+            brand: "Enviz",
+            jobName: "GSAP Animations and UI",
+            client: "Omaley Made",
+
+            mainImage: {
+                desktop: "/img/work/enviz-module.jpg",
+                mobile: "/img/work/enviz-module.jpg"
+            },
+            description: {
+                short: "Custom animaitons for the Enviz website",
+                long: "Enviz had built a webflow based website, and tasked us with creating custom animations using GSAP - an industry standard animation platform - that would integrate smoothly with their site. Timings were tight, and the limitations of the platform had to be worked around, but we nailed it"
+            },
+            images: [
+                {
+                    url: "/img/work/enviz-module.jpg",
+                    title: "",
+                    description: ""
+                }
+            ]
+        },
+        {
+            url: "mitsubishi",
+            brand: "Mitsubishi",
+            jobName: "ASX Pitch",
+            client: "Dentsu Creative",
+
+            mainImage: {
+                desktop: "/img/work/mitsubishi_pitch.jpg",
+                mobile: "/img/work/mitsubishi_pitch.jpg"
+            },
+            description: {
+                short: "Social and digital display campaign",
+                long: "Lorem ipsum"
+            },
+            images: [
+                {
+                    url: "/img/work/mitsubishi_pitch.jpg",
+                    title: "",
+                    description: ""
+                }
+            ]
+        },
+        {
             url: "wetpac-smart-pay",
             jobName: "Smart Pay",
             mainImage: {
@@ -37,28 +81,6 @@ const PageData = {
             images: [
                 {
                     url: "/img/work/ziwi-01.jpg",
-                    title: "",
-                    description: ""
-                }
-            ]
-        },
-        {
-            url: "enviz",
-            brand: "Enviz",
-            jobName: "GSAP Animations and UI",
-            client: "Omaley Made",
-
-            mainImage: {
-                desktop: "/img/work/enviz-module.jpg",
-                mobile: "/img/work/enviz-module.jpg"
-            },
-            description: {
-                short: "Custom animaitons for the Enviz website",
-                long: "Enviz had built a webflow based website, and tasked us with creating custom animations using GSAP - an industry standard animation platform - that would integrate smoothly with their site. Timings were tight, and the limitations of the platform had to be worked around, but we nailed it"
-            },
-            images: [
-                {
-                    url: "/img/work/enviz-module.jpg",
                     title: "",
                     description: ""
                 }
@@ -108,28 +130,7 @@ const PageData = {
                 }
             ]
         },
-        {
-            url: "southern-cross-gp",
-            brand: "Southen Cross Health Insurance",
-            jobName: "GP Care",
-            client: "True",
 
-            mainImage: {
-                desktop: "/img/work/southern-cross-gp-01.jpg",
-                mobile: "/img/work/southern-cross-gp-01.jpg"
-            },
-            description: {
-                short: "Social and digital display campaign",
-                long: "Lorem ipsum"
-            },
-            images: [
-                {
-                    url: "/img/work/southern-cross-gp-01.jpg",
-                    title: "",
-                    description: ""
-                }
-            ]
-        }
     ]
 
 }

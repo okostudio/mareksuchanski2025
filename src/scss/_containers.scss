@@ -26,6 +26,10 @@ section {
         padding: 4em 6em;
     }
 
+    &.light-blue {
+        background-color: $light-blue;
+    }
+
     &.beige {
         background-color: $beige;
     }

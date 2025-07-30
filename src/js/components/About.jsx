@@ -8,7 +8,7 @@ const About = () => {
                 <div>
                     <ScrollContainer>
                         <h2 className="xl">
-                            We make <br />scroll stopping <br />content for breakfast.
+                            We make <br />scroll stopping <br />content.
                         </h2>
                     </ScrollContainer>
                 </div>
