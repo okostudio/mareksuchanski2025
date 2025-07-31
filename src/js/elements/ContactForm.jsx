@@ -50,7 +50,7 @@ const ContactForm = () => {
             );
 
             // Display success alert
-            toggleAlert('Thank you! We&rsquo;ll be in touch ASAP', 'success');
+            toggleAlert(`Thank you! We'll be in touch ASAP`, 'success');
         } catch (e) {
             console.error(e);
             // Display error alert
