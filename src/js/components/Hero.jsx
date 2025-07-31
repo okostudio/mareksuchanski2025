@@ -68,8 +68,8 @@ const Hero = (props) => {
         <section className="hero black">
             <div className="video-holder">
                 <video width="100%" height="100%" playsInline loop muted autoPlay>
-                    <source src="/video/oko-reel.mp4" type="video/mp4" />
-                    <source src="/video/oko-reel.webm" type="video/webm" />
+                    <source src="/video/showreel_2025.mp4" type="video/mp4" />
+                    <source src="/video/showreel_2025.webm" type="video/webm" />
                 </video>
             </div>
             <div className="container left">
