@@ -23,7 +23,7 @@ const ContactForm = () => {
         // Hide alert after 5 seconds
         setTimeout(() => {
             setAlertInfo({ display: false, message: '', type: '' });
-        }, 5000);
+        }, 10000);
     };
 
     // Function called on submit that uses emailjs to send email of valid contact form
@@ -150,7 +150,7 @@ const ContactForm = () => {
                     role='alert'
                 >
                     {alertInfo.message}
-                    <button
+                    {/* <button
                         type='button'
                         className='btn-close'
                         data-bs-dismiss='alert'
@@ -158,7 +158,7 @@ const ContactForm = () => {
                         onClick={() =>
                             setAlertInfo({ display: false, message: '', type: '' })
                         } // Clear the alert when close button is clicked
-                    ></button>
+                    ></button> */}
                 </div>
             )}
         </div>
