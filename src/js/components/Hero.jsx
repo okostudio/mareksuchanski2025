@@ -75,10 +75,11 @@ const Hero = (props) => {
                             <source src="/video/showreel_2025.webm" type="video/webm" />
                         </video>
                         :
-                        <video width="100%" height="100%" playsInline loop muted autoPlay>
-                            <source src="/video/showreel_2025_mobile.mp4" type="video/mp4" />
-                            <source src="/video/showreel_2025_mobile.webm" type="video/webm" />
-                        </video>
+                        // <video width="100%" height="100%" playsInline loop muted autoPlay>
+                        //     <source src="/video/showreel_2025_mobile.mp4" type="video/mp4" />
+                        //     <source src="/video/showreel_2025_mobile.webm" type="video/webm" />
+                        // </video>
+                        <img src="/video/showreel_2025_mobile.gif" alt="okokokokoko" />
 
                 }
 
