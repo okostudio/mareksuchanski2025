@@ -4,6 +4,8 @@
     z-index: 20;
     position: relative;
     text-align: left;
+    height: calc(100vh - 2.5em);
+    min-height: calc(100vh - 2.5em);
 
     .contact__content {
 
@@ -15,6 +17,7 @@
 
             input,
             textarea {
+                position: relative;
                 margin: 0 0 1em 0;
                 font-size: 1.0em;
                 color: white;
@@ -35,8 +38,19 @@
             }
 
             textarea {
+                position: relative;
+
                 width: 100%;
                 min-height: 7em;
+            }
+
+            .errorMessage {
+                position: relative;
+                font-size: 0.7em;
+                color: $red;
+                margin-bottom: 0.5em;
+                top: -1.5em;
+                display: inline-block;
             }
         }
     }

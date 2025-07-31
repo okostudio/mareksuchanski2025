@@ -135,7 +135,7 @@ const ContactForm = () => {
 
                 <div>
                     <button
-                        className='black'
+                        className='white'
                         disabled={disabled}
                         type='submit'
                     >

@@ -1,18 +1,23 @@
 @use '../variables' as *;
 
 footer {
-    background-color: $black;
+    background-color: $off-black;
     flex-direction: column;
     min-height: auto;
     color: white;
+    font-size: 0.87em;
 
-    padding: 3em 0;
+    padding: 1em 0;
 
     @media (min-width: 768px) {
-        padding: 3em 2em;
+        padding: 1em 2em;
     }
 
     @media (min-width: 1024px) {
-        padding: 4em 6em;
+        padding: 1em 6em;
+    }
+
+    p {
+        margin-bottom: 0;
     }
 }

@@ -1,13 +1,14 @@
-import { useState } from "react";
+// import ContactForm from "../elements/ContactForm";
+// import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
 
-    const [navIsOpen, setNavIsOpen] = useState(false)
+    // const [navIsOpen, setNavIsOpen] = useState(false)
 
-    const toggleNav = () => {
-        setNavIsOpen(!navIsOpen);
-    }
+    // const toggleNav = () => {
+    //     setNavIsOpen(!navIsOpen);
+    // }
 
     return (
         <nav>
@@ -18,16 +19,28 @@ const Nav = () => {
                     </Link>
                 </div>
             </div>
-            <div className="nav-menu-icon" onClick={() => { toggleNav() }}>
+            {/* <div className="nav-menu-icon" onClick={() => { toggleNav() }}>
                 <div className={"nav__menu" + (navIsOpen ? " open" : " closed")} onClick={() => { toggleNav() }}>
 
                     {navIsOpen ?
 
-                        <ul className="menu">
-                            <li><a href="">About</a></li>
-                            <li><a href="">Work</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul>
+                        // <ul className="menu">
+                        //     <li><a href="">About</a></li>
+                        //     <li><a href="">Work</a></li>
+                        //     <li><a href="">Contact</a></li>
+                        // </ul>
+                        <section className="contact black">
+                            <div className="container center">
+                                <div>
+                                    <div className="contact__content">
+                                        <h2 className="white">
+                                            Let&rsquo;s get in touch
+                                        </h2>
+                                        <ContactForm />
+                                    </div>
+                                </div>
+                            </div>
+                        </section >
 
                         : null}
 
@@ -41,7 +54,7 @@ const Nav = () => {
                         <path className="white" d="M30,32,L55,32" />
                     </g>
                 </svg>
-            </div>
+            </div> */}
         </nav>
     );
 };

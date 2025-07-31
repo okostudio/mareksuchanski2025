@@ -2,7 +2,7 @@ import ContactForm from "../elements/ContactForm";
 
 const ContactUs = () => {
     return (
-        <section className="contact green">
+        <section className="contact black">
             <div className="container center">
 
                 <div>

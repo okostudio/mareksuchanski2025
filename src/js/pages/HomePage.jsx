@@ -1,22 +1,29 @@
 import PageWrapper from './PageWrapper'
 import Hero from '../components/Hero'
-import Capabilities from '../components/Capabilities'
-import Work from '../components/Work'
-import About from '../components/About'
-import OurBrands from '../components/Brands'
+import ContactUs from '../components/ContactUs'
+
+import { useRef } from 'react'
+// import Capabilities from '../components/Capabilities'
+// import Work from '../components/Work'
+// import About from '../components/About'
+// import OurBrands from '../components/Brands'
 
 
 function HomePage() {
+    const contactFormRef = useRef()
 
     return (
         <PageWrapper>
-            <Hero />
+            <Hero contactRef={contactFormRef} />
 
 
-            <About />
+            {/* <About />
             <OurBrands />
             <Capabilities />
-            <Work />
+            <Work /> */}
+            <div ref={contactFormRef}>
+                <ContactUs />
+            </div>
         </PageWrapper>
     )
 }

@@ -1,13 +1,14 @@
 
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
-import ContactUs from '../components/ContactUs'
+// import ContactUs from '../components/ContactUs'
 import { useEffect, useRef } from 'react'
 import { useMouse } from '../hooks/UseMouse'
 
 function PageWrapper(props) {
     const { mousePosition, mouseMovement } = useMouse();
     const cursor = useRef();
+
 
     useEffect(() => {
         // const rad = Math.atan(mouseMovement.y / mouseMovement.x)
@@ -26,7 +27,8 @@ function PageWrapper(props) {
 
             {props.children}
 
-            <ContactUs />
+
+
             <Footer />
             <div className="noise"></div>
             <div className="cursor" ref={cursor}></div>

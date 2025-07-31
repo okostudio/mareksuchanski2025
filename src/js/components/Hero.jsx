@@ -16,9 +16,17 @@ gsap.registerPlugin(useGSAP, ScrollTrigger, DrawSVGPlugin, SplitText, CustomEase
 // import ScrollContainer from "../animation/ScrollContainer";
 
 // import React from "react";
-const Hero = () => {
+const Hero = (props) => {
 
     const scrollAnimation = useRef();
+    const contactRef = props.contactRef
+
+    const slideToContact = () => {
+        console.log("what", contactRef, contactRef.current)
+        if (contactRef.current) {
+            contactRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
 
     useGSAP(
         () => {
@@ -57,7 +65,7 @@ const Hero = () => {
     )
 
     return (
-        <section className="hero light-blue">
+        <section className="hero black">
             <div className="video-holder">
                 <video width="100%" height="100%" playsInline loop muted autoPlay>
                     <source src="/video/oko-reel.mp4" type="video/mp4" />
@@ -80,7 +88,7 @@ const Hero = () => {
                                 100’s of dispatched campaigns. <br />
                                 1000’s of banners, videos, websites & more.
                             </p>
-                            <button className='red'>Get in touch</button>
+                            <button className='red' onClick={slideToContact}>Get in touch</button>
                         </div>
                     </div>
                 </div>
