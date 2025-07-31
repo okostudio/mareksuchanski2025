@@ -67,10 +67,21 @@ const Hero = (props) => {
     return (
         <section className="hero black">
             <div className="video-holder">
-                <video width="100%" height="100%" playsInline loop muted autoPlay>
-                    <source src="/video/showreel_2025.mp4" type="video/mp4" />
-                    <source src="/video/showreel_2025.webm" type="video/webm" />
-                </video>
+
+                {
+                    (window.innerWidth > window.innerHeight * 1.3) ?
+                        <video width="100%" height="100%" playsInline loop muted autoPlay>
+                            <source src="/video/showreel_2025.mp4" type="video/mp4" />
+                            <source src="/video/showreel_2025.webm" type="video/webm" />
+                        </video>
+                        :
+                        <video width="100%" height="100%" playsInline loop muted autoPlay>
+                            <source src="/video/showreel_2025_mobile.mp4" type="video/mp4" />
+                            <source src="/video/showreel_2025_mobile.webm" type="video/webm" />
+                        </video>
+
+                }
+
             </div>
             <div className="container left">
                 <div className="left-col">
