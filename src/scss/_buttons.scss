@@ -14,7 +14,7 @@ button {
     background: $green;
     border: 2px solid $green;
     cursor: pointer;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
 
     transition: background 0.2s ease-out, color 0.2s ease-out;
 
@@ -39,6 +39,7 @@ button {
         color: $green;
 
         &.red {
+            background: rgba($white, 0.1);
             color: $red;
         }
 

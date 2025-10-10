@@ -15,7 +15,7 @@ const Nav = () => {
             <div className="container">
                 <div className="nav-logo">
                     <Link to={"/"}>
-                        <img src="/logo-okostudio.svg" alt="OKO Studio Logo" />
+                        <img src="/logo-m-badge.svg" alt="MAREK SUCHANSKI" />
                     </Link>
                 </div>
             </div>

@@ -79,7 +79,7 @@ const Hero = (props) => {
                         //     <source src="/video/showreel_2025_mobile.mp4" type="video/mp4" />
                         //     <source src="/video/showreel_2025_mobile.webm" type="video/webm" />
                         // </video>
-                        <img src="/video/showreel_2025_mobile.gif" alt="okokokokoko" />
+                        <img src="/video/showreel_2025_mobile.gif" className='hero-video-fallback' alt="okokokokoko" />
 
                 }
 
@@ -89,10 +89,11 @@ const Hero = (props) => {
 
                     <div ref={scrollAnimation}>
                         <h1>
-                            Technical <br />
-                            firepower<span></span>for <br />
-                            creative<span></span>&amp; <br />
-                            digital<span></span>teams.
+                            Your <br />
+                            trusted <br />
+                            digital <br />
+                            production <br />
+                            partner
                         </h1>
 
                         <div className="card">
