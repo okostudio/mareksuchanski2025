@@ -13,7 +13,7 @@ const WorkItem = (props) => {
                     <img src={props.img} alt="" />
                 </div>
                 <div className="work__item__description p3">
-                    {props.description}
+                    <strong>{props.brand}</strong>  {" - " + props.description}
                 </div>
             </Link>
         </div>
@@ -51,7 +51,8 @@ const Work = () => {
                         <WorkItem
                             key={uuidv4()}
                             img={item.mainImage.desktop}
-                            description={item.brand + " - " + item.description.short}
+                            brand={item.brand}
+                            description={item.description.short}
                             link={"/work/" + item.url}
                         />
                     )

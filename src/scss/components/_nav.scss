@@ -19,16 +19,16 @@ nav {
         filter: drop-shadow(0 0 40px rgba(0, 0, 0, 0.5));
     }
 
-    // @media (min-width: 768px) {
-    //     .container {
-    //         position: static;
-    //     }
+    @media (min-width: 768px) {
+        .container {
+            position: static;
+        }
 
-    //     .nav-logo {
-    //         position: absolute;
-    //         left: 2em;
-    //     }
-    // }
+        .nav-logo {
+            position: absolute;
+            left: 2em;
+        }
+    }
 
     .nav-menu-icon {
         position: absolute;
@@ -102,6 +102,26 @@ nav {
     &.open {
         transform: scale(1) skewX(0);
         border-radius: 0;
+    }
+
+    .container {
+        position: relative;
+        width: 100vw;
+        max-width: 50em;
+
+        >div {
+            width: 100%;
+
+        }
+
+        .contact__content {
+            position: relative;
+            width: 100%;
+
+            .contactForm {
+                width: 100%;
+            }
+        }
     }
 
     ul {
