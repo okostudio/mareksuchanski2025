@@ -71,8 +71,8 @@ const Hero = (props) => {
                 {
                     (window.innerWidth > window.innerHeight * 1.3) ?
                         <video width="100%" height="100%" playsInline loop muted autoPlay>
-                            <source src="/video/showreel_2025.mp4" type="video/mp4" />
-                            <source src="/video/showreel_2025.webm" type="video/webm" />
+                            <source src="/video/showreel_2025-xl.mp4" type="video/mp4" />
+                            <source src="/video/showreel_2025-xl.webm" type="video/webm" />
                         </video>
                         :
                         // <video width="100%" height="100%" playsInline loop muted autoPlay>
