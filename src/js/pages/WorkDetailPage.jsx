@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import PageData from '../PageData'
 import Section from '../components/Section'
 import PageWrapper from './PageWrapper'
+import ContactUs from '../components/ContactUs'
 
 
 function WorkDetailPage() {
@@ -32,6 +33,7 @@ function WorkDetailPage() {
                         <img src={pageData.mainImage.desktop} alt={pageData.jobName} className='img-cover' />
 
                     </Section>
+                    <ContactUs />
                 </>
                 : null}
         </PageWrapper>

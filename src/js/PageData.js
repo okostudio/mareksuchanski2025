@@ -34,7 +34,7 @@ const PageData = {
             },
             description: {
                 short: "Social and digital display campaign",
-                long: "Lorem ipsum"
+                long: "This page is still under construcion. Please stay tuned."
             },
             images: [
                 {
@@ -55,7 +55,7 @@ const PageData = {
             client: "Saatch & Saatchi",
             description: {
                 short: "Social and digital display campaign",
-                long: "Lorem ipsum dolor sic..."
+                long: "This page is still under construcion. Please stay tuned."
             },
             images: [
                 {
@@ -76,7 +76,7 @@ const PageData = {
             client: "True",
             description: {
                 short: "Social and digital display campaign",
-                long: "Lorem ipsum dolor sic..."
+                long: "This page is still under construcion. Please stay tuned."
             },
             images: [
                 {

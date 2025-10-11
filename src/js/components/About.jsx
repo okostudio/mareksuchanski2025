@@ -1,4 +1,5 @@
 import ScrollContainer from "../animation/ScrollContainer";
+import OurBrands from "./Brands";
 
 
 const About = () => {
@@ -8,9 +9,10 @@ const About = () => {
                 <div>
                     <ScrollContainer>
                         <h2 className="xl">
-                            We make <br />scroll stopping <br />content.
+                            Let&rsquo;s make <br />scroll stopping <br />content!
                         </h2>
                     </ScrollContainer>
+                    <OurBrands />
                 </div>
             </div>
         </section >

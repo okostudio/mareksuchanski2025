@@ -4,9 +4,8 @@ import ContactUs from '../components/ContactUs'
 
 import { useRef } from 'react'
 // import Capabilities from '../components/Capabilities'
-// import Work from '../components/Work'
-// import About from '../components/About'
-// import OurBrands from '../components/Brands'
+import Work from '../components/Work'
+import About from '../components/About'
 
 
 function HomePage() {
@@ -16,11 +15,8 @@ function HomePage() {
         <PageWrapper>
             <Hero contactRef={contactFormRef} />
 
-
-            {/* <About />
-            <OurBrands />
-            <Capabilities />
-            <Work /> */}
+            <About />
+            <Work />
             <div ref={contactFormRef}>
                 <ContactUs />
             </div>

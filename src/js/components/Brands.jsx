@@ -53,9 +53,9 @@ const OurBrands = () => {
             <div className="container center">
                 <div>
                     <div className="brands">
-                        {/* <h3>
-                            Brands we&rsquo;ve helped
-                        </h3> */}
+                        <h3>
+                            {/* Brands we&rsquo;ve helped */}
+                        </h3>
                         <div className="brands__content" ref={brands}>
                             <img src="/img/logos/logo-partner-true.svg" alt="brand" className="brand__logo mobile_logo1 desktop_logo1" />
                             <img src="/img/logos/logo-partner-saatchi.svg" alt="brand" className="brand__logo mobile_logo1 desktop_logo1" />
