@@ -4,6 +4,7 @@ import PageData from '../PageData'
 import Section from '../components/Section'
 import PageWrapper from './PageWrapper'
 import ContactUs from '../components/ContactUs'
+import { v4 as uuidv4 } from 'uuid';
 
 
 function WorkDetailPage() {
@@ -28,7 +29,17 @@ function WorkDetailPage() {
                         <div className="description">
 
                             <h1><em>{pageData.brand}:</em> {pageData.jobName}</h1>
-                            <p>{pageData.description.long}</p>
+                            <div>{
+                                pageData.description.long.map(element => {
+                                    return (
+                                        <>
+                                            <p
+                                                key={uuidv4()}
+                                            >{element.text}</p>
+                                        </>
+                                    )
+                                })}
+                            </div>
                         </div>
                         <img src={pageData.mainImage.desktop} alt={pageData.jobName} className='img-cover' />
 

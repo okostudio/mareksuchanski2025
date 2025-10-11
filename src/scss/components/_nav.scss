@@ -49,80 +49,97 @@ nav {
                 stroke-linecap: round;
                 stroke-miterlimit: 10;
                 stroke-width: 2.5px;
+
+                transform-origin: center;
+                transition: transform 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+            }
+
+            .burger.open {
+                .white:nth-child(1) {
+                    transform: translate(-6.6px, 6.6px) rotate(45deg);
+                }
+
+                .white:nth-child(2) {
+                    transform: rotate(90deg) scaleX(0);
+                }
+
+                .white:nth-child(3) {
+                    transform: translate(6.6px, 6.6px) rotate(135deg);
+                }
             }
         }
     }
+}
 
-    .nav__menu {
-        position: absolute;
-        top: 0;
-        right: 0;
+.nav__menu {
+    position: absolute;
+    top: 0;
+    right: 0;
 
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
-        height: 100dvh;
-        top: 0;
-        right: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    top: 0;
+    right: 0;
 
-        transform-origin: 100% 0%;
-        border-radius: 0 0 0 60%;
-        transform: scale(0) skewX(15deg);
+    transform-origin: 100% 0%;
+    border-radius: 0 0 0 60%;
+    transform: scale(0) skewX(15deg);
 
-        background: $black;
-        transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1),
-            border-radius 0.7s cubic-bezier(0.86, 0, 0.07, 1);
-        transition-delay: 0s;
+    background: $black;
+    transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1),
+        border-radius 0.7s cubic-bezier(0.86, 0, 0.07, 1);
+    transition-delay: 0s;
 
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10em;
-        color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10em;
+    color: $white;
 
-        &.open {
-            transform: scale(1) skewX(0);
-            border-radius: 0;
-        }
+    &.open {
+        transform: scale(1) skewX(0);
+        border-radius: 0;
+    }
 
-        ul {
-            list-style: none;
-            font-size: 2em;
-            margin: 0;
-            line-height: 1;
+    ul {
+        list-style: none;
+        font-size: 2em;
+        margin: 0;
+        line-height: 1;
 
-            li {
-                a {
-                    display: inline-block;
-                    width: auto;
-                    position: relative;
-                    padding: 0.6em 0;
-                    text-decoration: none;
-                    outline: none;
-                    color: $white;
+        li {
+            a {
+                display: inline-block;
+                width: auto;
+                position: relative;
+                padding: 0.6em 0;
+                text-decoration: none;
+                outline: none;
+                color: $white;
+
+                &::after {
+                    bottom: 0.4em;
+                    left: 0;
+                    position: absolute;
+                    content: "";
+                    background-color: $red;
+                    width: 100%;
+                    height: 0.04em;
+                    transform: scaleX(0);
+                    transform-origin: 100% 0;
+
+                    transition: transform 0.3s cubic-bezier(0.23, 1, 0.320, 1)
+                }
+
+                &:hover {
+                    color: $red;
 
                     &::after {
-                        bottom: 0.4em;
-                        left: 0;
-                        position: absolute;
-                        content: "";
-                        background-color: $red;
-                        width: 100%;
-                        height: 0.04em;
-                        transform: scaleX(0);
-                        transform-origin: 100% 0;
-
-                        transition: transform 0.3s cubic-bezier(0.23, 1, 0.320, 1)
-                    }
-
-                    &:hover {
-                        color: $red;
-
-                        &::after {
-                            transform: scaleX(1);
-                            transform-origin: 0 0;
-                        }
+                        transform: scaleX(1);
+                        transform-origin: 0 0;
                     }
                 }
             }

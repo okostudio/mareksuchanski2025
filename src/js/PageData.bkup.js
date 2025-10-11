@@ -12,11 +12,7 @@ const PageData = {
             },
             description: {
                 short: "Custom animaitons for the Enviz website",
-                long: [
-                    {
-                        type: "p", text: `Enviz had built a webflow based website, and tasked us with creating custom animations using GSAP - an industry standard animation platform - that would integrate smoothly with their site. Timings were tight, and the limitations of the platform had to be worked around, but we nailed it`
-                    }
-                ]
+                long: "Enviz had built a webflow based website, and tasked us with creating custom animations using GSAP - an industry standard animation platform - that would integrate smoothly with their site. Timings were tight, and the limitations of the platform had to be worked around, but we nailed it"
             },
             images: [
                 {
@@ -37,11 +33,8 @@ const PageData = {
                 mobile: "/img/work/mitsubishi_pitch.jpg"
             },
             description: {
-                short: "Animation and design",
-                long: [
-                    { type: "p", text: `I was tasked with creating 2D and 3D animations as well as supporting graphics for a pitch to win Mitrubishi for Dentsu Creative.` },
-                    { type: "p", text: `Ultimately the pitch wasn't successful, however my animations and elements were a hit. Some elements have been used in multiple future pitches and events.` }
-                ]
+                short: "Social and digital display campaign",
+                long: "This page is still under construcion. Please stay tuned."
             },
             images: [
                 {
@@ -62,11 +55,7 @@ const PageData = {
             client: "Saatch & Saatchi",
             description: {
                 short: "Social and digital display campaign",
-                long: [
-                    {
-                        type: "p", text: `This page is still under construcion. Please stay tuned.`
-                    }
-                ]
+                long: "This page is still under construcion. Please stay tuned."
             },
             images: [
                 {
@@ -87,11 +76,7 @@ const PageData = {
             client: "True",
             description: {
                 short: "Social and digital display campaign",
-                long: [
-                    {
-                        type: "p", text: `This page is still under construcion. Please stay tuned.`
-                    }
-                ]
+                long: "This page is still under construcion. Please stay tuned."
             },
             images: [
                 {
@@ -113,11 +98,7 @@ const PageData = {
             },
             description: {
                 short: "Social and digital display campaign",
-                long: [
-                    {
-                        type: "p", text: `This page is still under construcion. Please stay tuned.`
-                    }
-                ]
+                long: "Lorem ipsum"
             },
             images: [
                 {
@@ -128,26 +109,22 @@ const PageData = {
             ]
         },
         {
-            url: "three-js-head",
-            brand: "Myself",
-            jobName: "Three JS Experiments",
-            client: "Me",
+            url: "we-get-pet",
+            brand: "Pet Direct",
+            jobName: "We Get Pet",
+            client: "Pet Direct",
 
             mainImage: {
-                desktop: "/img/work/3d-head.jpg",
-                mobile: "/img/work/3d-head-mobile.jpg"
+                desktop: "/img/work/pet_direct_wegetpet.jpg",
+                mobile: "/img/work/pet_direct_wegetpet.jpg"
             },
             description: {
-                short: "Three JS interactive animation",
-                long: [
-                    {
-                        type: "p", text: `This page is still under construcion. Please stay tuned.`
-                    }
-                ]
+                short: "Social and digital display campaign",
+                long: "Lorem ipsum"
             },
             images: [
                 {
-                    url: "/img/work/3d-head.jpg",
+                    url: "/img/work/pet_direct_wegetpet.jpg",
                     title: "",
                     description: ""
                 }
