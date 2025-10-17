@@ -91,3 +91,18 @@ body {
   width: 100%;
   height: auto;
 }
+
+
+// loader
+.m-loader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+.m-loader canvas {
+  width: 100%;
+  height: 100%;
+}

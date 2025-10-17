@@ -6,6 +6,7 @@ import { useRef } from 'react'
 // import Capabilities from '../components/Capabilities'
 import Work from '../components/Work'
 import About from '../components/About'
+import { Analytics } from "@vercel/analytics/next"
 
 
 function HomePage() {
@@ -20,6 +21,7 @@ function HomePage() {
             <div ref={contactFormRef}>
                 <ContactUs />
             </div>
+            <Analytics />
         </PageWrapper>
     )
 }

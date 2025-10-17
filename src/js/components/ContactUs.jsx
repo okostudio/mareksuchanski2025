@@ -9,7 +9,7 @@ const ContactUs = () => {
 
                     <div className="contact__content">
                         <h2 className="white">
-                            Let&rsquo;s get in touch
+                            Let&rsquo;s make scroll&nbsp;stopping content!
                         </h2>
                         <ContactForm />
                     </div>

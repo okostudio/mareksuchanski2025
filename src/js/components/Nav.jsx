@@ -1,6 +1,7 @@
 import ContactForm from "../elements/ContactForm";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import ContactUs from "./ContactUs";
 
 const Nav = () => {
 
@@ -25,18 +26,19 @@ const Nav = () => {
                     {navIsOpen ?
 
 
-                        <section className="contact black">
-                            <div className="container center">
-                                <div>
-                                    <div className="contact__content">
-                                        <h2 className="white">
-                                            Let&rsquo;s get in touch
-                                        </h2>
-                                        <ContactForm />
-                                    </div>
-                                </div>
-                            </div>
-                        </section >
+                        // <section className="contact black">
+                        //     <div className="container center">
+                        //         <div>
+                        //             <div className="contact__content">
+                        //                 <h2 className="white">
+                        //                     src/js/components/ContactUs.jsx
+                        //                 </h2>
+                        //                 <ContactForm />
+                        //             </div>
+                        //         </div>
+                        //     </div>
+                        // </section >
+                        <ContactUs />
 
                         : null}
 

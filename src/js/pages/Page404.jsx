@@ -1,4 +1,5 @@
 
+import { Analytics } from '@vercel/analytics/next'
 import Section from '../components/Section'
 import Button from '../elements/Button'
 import PageWrapper from './PageWrapper'
@@ -13,6 +14,7 @@ function Page404() {
                     Don&rsquo;t fret, you&rsquo;ve just hit a 404 Error</h3>
                 <Button to={"/"} class="green">Let&rsquo;s go home</Button>
             </Section>
+            <Analytics />
         </PageWrapper>
     )
 }

@@ -36,8 +36,9 @@ const Hero = (props) => {
                 const tl = gsap.timeline({
                     scrollTrigger: {
                         trigger: scrollAnimation.current,
-                        start: "top 85%",
-
+                        start: 'top center',
+                        end: 'bottom center',
+                        scrub: true,
                     }
                 });
                 tl.addLabel("start")
@@ -101,7 +102,7 @@ const Hero = (props) => {
                                 100’s of dispatched campaigns. <br />
                                 1000’s of banners, videos, websites & more.
                             </p>
-                            <button className='red' onClick={slideToContact}>Get in touch</button>
+                            <button className='red' onClick={slideToContact}>Get&nbsp;in&nbsp;touch</button>
                         </div>
                     </div>
                 </div>

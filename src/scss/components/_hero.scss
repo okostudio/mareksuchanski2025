@@ -44,7 +44,7 @@
             display: inline-block !important;
             // width: auto;
             // background: $red;
-            background: rgba($white, 0.95);
+            background: rgba($white, 1.0);
             padding: 0.3em;
             margin-bottom: -0.3em;
             color: $black;
@@ -65,7 +65,7 @@
         }
 
         @media (min-width: 768px) {
-            max-width: 95%;
+            max-width: 65%;
             height: 100%;
         }
 
