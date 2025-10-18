@@ -38,7 +38,7 @@ const Hero = (props) => {
                         trigger: scrollAnimation.current,
                         start: 'top center',
                         end: 'bottom center',
-                        scrub: true,
+                        scrub: false,
                     }
                 });
                 tl.addLabel("start")

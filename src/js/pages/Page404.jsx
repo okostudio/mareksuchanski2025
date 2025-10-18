@@ -1,5 +1,5 @@
 
-import { Analytics } from '@vercel/analytics/next'
+import { Analytics } from "@vercel/analytics/react"
 import Section from '../components/Section'
 import Button from '../elements/Button'
 import PageWrapper from './PageWrapper'

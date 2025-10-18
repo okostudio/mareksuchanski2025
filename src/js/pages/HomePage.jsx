@@ -6,7 +6,7 @@ import { useRef } from 'react'
 // import Capabilities from '../components/Capabilities'
 import Work from '../components/Work'
 import About from '../components/About'
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 
 function HomePage() {

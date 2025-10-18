@@ -5,7 +5,7 @@ import Section from '../components/Section'
 import PageWrapper from './PageWrapper'
 import ContactUs from '../components/ContactUs'
 import { v4 as uuidv4 } from 'uuid';
-import { Analytics } from '@vercel/analytics/next'
+import { Analytics } from "@vercel/analytics/react"
 
 
 function WorkDetailPage() {
