@@ -1,6 +1,82 @@
 const PageData = {
     work: [
         {
+            url: "secret-suppers",
+            jobName: "Secret Suppers Website",
+            mainImage: {
+                desktop: "/img/work/rrd/rrd-01.jpg",
+                mobile: "/img/work/rrd/rrd-01.jpg"
+            },
+            brand: "Red Rock Deli",
+            client: "Isobar",
+            description: {
+                short: "Full ownership of React build and deployment",
+                long: [
+                    {
+                        type: "p", text: `This page is still under construcion. Please stay tuned.`
+                    }
+                ]
+            },
+            images: [
+                {
+                    url: "/img/work/WPT5122_Lotus_A.jpg",
+                    title: "",
+                    description: ""
+                }
+            ]
+        },
+        {
+            url: "momatu",
+            brand: "Momatu",
+            jobName: "Family memory timelines",
+            client: "Isobar",
+
+            mainImage: {
+                desktop: "/img/work/momatu/momatu-01.jpg",
+                mobile: "/img/work/momatu/momatu-01.jpg"
+            },
+            description: {
+                short: "Web app development, with full ownership of build & delivery",
+                long: [
+                    {
+                        type: "p", text: `This page is still under construcion. Please stay tuned.`
+                    }
+                ]
+            },
+            images: [
+                {
+                    url: "/img/work/momatu/momatu-01.jpg",
+                    title: "",
+                    description: ""
+                }
+            ]
+        },
+        {
+            url: "praise-or-haze",
+            jobName: "Praise or Haze Trump",
+            mainImage: {
+                desktop: "/img/work/praise-or-haze-trump/trump-01.png",
+                mobile: "/img/work/praise-or-haze-trump/trump-01.png"
+            },
+            brand: "Praise or Haze Trump",
+            client: "WiTH Collective",
+            description: {
+                short: "Front-end development of Awwward winning website. illustration",
+                long: [
+                    {
+                        type: "p", text: `This page is still under construcion. Please stay tuned.`
+                    }
+                ]
+            },
+            images: [
+                {
+                    url: "/img/work/praise-or-haze-trump/trump-01.png",
+                    title: "",
+                    description: ""
+                }
+            ]
+        },
+        {
             url: "enviz",
             brand: "Enviz",
             jobName: "GSAP Animations and UI",
@@ -52,16 +128,17 @@ const PageData = {
             ]
         },
         {
-            url: "wetpac-smart-pay",
-            jobName: "Smart Pay",
+            url: "head-interactive",
+            brand: "OKO Studio",
+            jobName: "3D Interactive",
+            client: "OKO Studio",
+
             mainImage: {
-                desktop: "/img/work/WPT5122_Lotus_A.jpg",
-                mobile: "/img/work/WPT5122_Lotus_A.jpg"
+                desktop: "/img/work/3d-head.jpg",
+                mobile: "/img/work/3d-head-mobile.jpg"
             },
-            brand: "Westpac",
-            client: "Saatch & Saatchi",
             description: {
-                short: "Social and digital display campaign",
+                short: "ThreeJS interactive experience",
                 long: [
                     {
                         type: "p", text: `This page is still under construcion. Please stay tuned.`
@@ -70,12 +147,15 @@ const PageData = {
             },
             images: [
                 {
-                    url: "/img/work/WPT5122_Lotus_A.jpg",
+                    url: "/img/work/3d-head.jpg",
                     title: "",
                     description: ""
                 }
             ]
         },
+
+
+        // ------ CUT OFF FOR 6 ITEMS
         {
             url: "ziwi-freeze-dried",
             jobName: "Freeze Dried",
@@ -102,6 +182,31 @@ const PageData = {
             ]
         },
         {
+            url: "wetpac-smart-pay",
+            jobName: "Smart Pay",
+            mainImage: {
+                desktop: "/img/work/WPT5122_Lotus_A.jpg",
+                mobile: "/img/work/WPT5122_Lotus_A.jpg"
+            },
+            brand: "Westpac",
+            client: "Saatch & Saatchi",
+            description: {
+                short: "Social and digital display campaign",
+                long: [
+                    {
+                        type: "p", text: `This page is still under construcion. Please stay tuned.`
+                    }
+                ]
+            },
+            images: [
+                {
+                    url: "/img/work/WPT5122_Lotus_A.jpg",
+                    title: "",
+                    description: ""
+                }
+            ]
+        },
+        {
             url: "the-beer-for-here",
             brand: "Export ultra",
             jobName: "The Beer For Here",
@@ -122,32 +227,6 @@ const PageData = {
             images: [
                 {
                     url: "/img/work/export-ultra-thebeerforhere.jpg",
-                    title: "",
-                    description: ""
-                }
-            ]
-        },
-        {
-            url: "three-js-head",
-            brand: "Myself",
-            jobName: "Three JS Experiments",
-            client: "Me",
-
-            mainImage: {
-                desktop: "/img/work/3d-head.jpg",
-                mobile: "/img/work/3d-head-mobile.jpg"
-            },
-            description: {
-                short: "Three JS interactive animation",
-                long: [
-                    {
-                        type: "p", text: `This page is still under construcion. Please stay tuned.`
-                    }
-                ]
-            },
-            images: [
-                {
-                    url: "/img/work/3d-head.jpg",
                     title: "",
                     description: ""
                 }

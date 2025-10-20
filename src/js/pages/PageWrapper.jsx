@@ -27,8 +27,6 @@ function PageWrapper(props) {
 
             {props.children}
 
-
-
             <Footer />
             <div className="noise"></div>
             <div className="cursor" ref={cursor}></div>

@@ -20,7 +20,7 @@ const WorkItem = (props) => {
     )
 }
 
-const Work = () => {
+const Work = (props) => {
 
     const [data, setData] = useState(null)
 
@@ -46,7 +46,7 @@ const Work = () => {
             </div> */}
             <div className="work__content">
 
-                {(data && data.work) ? data.work.map(item => {
+                {(data && data.work) ? data.work.slice(0, props.displayCount).map(item => {
                     return (
                         <WorkItem
                             key={uuidv4()}

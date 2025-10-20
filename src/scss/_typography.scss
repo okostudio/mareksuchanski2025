@@ -117,3 +117,13 @@ h3 {
         font-size: 1.8em;
     }
 }
+
+
+h1 .overflow-hidden,
+h2 .overflow-hidden,
+h3 .overflow-hidden,
+h4 .overflow-hidden,
+p .overflow-hidden {
+    overflow-y: hidden;
+    position: relative;
+}

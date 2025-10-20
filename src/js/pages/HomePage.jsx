@@ -7,22 +7,30 @@ import { useRef } from 'react'
 import Work from '../components/Work'
 import About from '../components/About'
 import { Analytics } from "@vercel/analytics/react"
+import Preloader from '../components/Preloader'
 
 
 function HomePage() {
     const contactFormRef = useRef()
 
-    return (
-        <PageWrapper>
-            <Hero contactRef={contactFormRef} />
 
-            <About />
-            <Work />
-            <div ref={contactFormRef}>
-                <ContactUs />
-            </div>
-            <Analytics />
-        </PageWrapper>
+
+
+    return (
+        <>
+            <PageWrapper>
+                <Hero contactRef={contactFormRef} />
+
+                <About />
+                <Work displayCount={6} />
+                <div ref={contactFormRef}>
+                    <ContactUs />
+                </div>
+                <Analytics />
+
+            </PageWrapper>
+            <Preloader />
+        </>
     )
 }
 

@@ -57,6 +57,16 @@ section {
     }
 }
 
+.flex {
+    display: flex;
+    position: relative;
+
+    &.centred {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 .container {
     position: relative;
 

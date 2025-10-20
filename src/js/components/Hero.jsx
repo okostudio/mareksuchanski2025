@@ -32,7 +32,8 @@ const Hero = (props) => {
         () => {
             gsap.context(() => {
 
-                let split = SplitText.create(("h1,p"), { type: "words,lines", linesClass: "line++", overflow: "hidden" });
+                // let h1Split = SplitText.create(("h1"), { type: "words,lines", linesClass: "line line++", overflow: "hidden" });
+                // let pSplit = SplitText.create(("p"), { type: "words,lines", linesClass: "line line++", overflow: "hidden" });
                 const tl = gsap.timeline({
                     scrollTrigger: {
                         trigger: scrollAnimation.current,
@@ -42,13 +43,19 @@ const Hero = (props) => {
                     }
                 });
                 tl.addLabel("start")
-                tl.from(split.lines, {
+                tl.from("h1 .line", {
+                    y: "100%",
+                    duration: 0.5,
+                    stagger: 0.07,
+                    ease: "power3.out"
+                }, "+=1.5")
+                tl.from("p .line", {
                     opacity: 0,
                     y: "0.5em",
                     duration: 0.5,
                     stagger: 0.07,
                     ease: "power3.out"
-                }, "+=0.5")
+                }, "+=0")
 
                 tl.from("button", {
                     opacity: 0,
@@ -68,7 +75,7 @@ const Hero = (props) => {
     return (
         <section className="hero black">
             <div className="video-holder">
-
+                <img src="/video/showreel_2025.jpg" className='hero-video-static' alt="okokokokoko" />
                 {
                     (window.innerWidth > window.innerHeight * 1.3) ?
                         <video width="100%" height="100%" playsInline loop muted autoPlay>
@@ -90,18 +97,17 @@ const Hero = (props) => {
 
                     <div ref={scrollAnimation}>
                         <h1>
-                            Your <br />
-                            trusted <br />
-                            digital <br />
-                            production <br />
-                            partner
+                            <Line>Creative</Line>
+                            <Line>developer</Line>
+                            <Line>& motion</Line>
+                            <Line>designer</Line>
                         </h1>
+                        <p className='p1'>
+                            <Line>Experience spanning 17 years</Line><br />
+                            <Line>across world leading brands and agencies</Line>
+                        </p>
 
                         <div className="card">
-                            <p className='p1'>
-                                100’s of dispatched campaigns. <br />
-                                1000’s of banners, videos, websites & more.
-                            </p>
                             <button className='red' onClick={slideToContact}>Get&nbsp;in&nbsp;touch</button>
                         </div>
                     </div>
@@ -111,5 +117,16 @@ const Hero = (props) => {
         </section>
     );
 };
+
+
+const Line = (props) => {
+
+    return (
+        <div className="overflow-hidden">
+            <div className="line">{props.children}</div>
+        </div>
+    )
+
+}
 
 export default Hero;

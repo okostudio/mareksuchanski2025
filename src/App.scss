@@ -6,6 +6,7 @@
 @use './scss/heroimage';
 @use './scss/cursor';
 
+@use './scss/components/loader';
 @use './scss/components/nav';
 @use './scss/components/hero';
 @use './scss/components/about';
@@ -94,15 +95,10 @@ body {
 
 
 // loader
-.m-loader {
+.section__loader {
   position: fixed;
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: 9999;
-}
-
-.m-loader canvas {
-  width: 100%;
-  height: 100%;
+  z-index: 999;
 }
