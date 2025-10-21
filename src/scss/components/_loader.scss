@@ -6,8 +6,18 @@
     position: fixed;
     z-index: 1000;
     background-color: $red !important;
-    // background: radial-gradient(circle, rgba($red, 1) 0%, rgba($dark-red, 1) 100%) !important;
     background: linear-gradient(0deg, $dark-red 0%, $red 100%) !important;
+
+    &.black {
+        background-color: $black !important;
+        background: linear-gradient(0deg, $black 0%, $dark 100%) !important;
+
+        .rounded-end {
+            svg {
+                fill: $black;
+            }
+        }
+    }
 
     svg.m-loader {
         width: 20vw;

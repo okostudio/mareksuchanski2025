@@ -53,3 +53,22 @@ export const RoundEndNegative = () => {
         </svg>
     )
 }
+
+export const RoundEndPositiveDown = () => {
+    return (
+        <svg width="1000" height="250" viewBox="0 0 1000 250">
+            <path d="M500,240C776.1,240,1000,132.5,1000,0H0C0,132.5,223.9,240,500,240Z" />
+        </svg>
+    )
+}
+
+export const RoundEndPositiveUp = () => {
+    return (
+        <svg width="1000" height="250" viewBox="0 0 1000 250">
+            <path d="M500,10C223.9,10,0,117.5,0,250h1000c0-132.5-223.9-240-500-240Z" />
+        </svg>
+    )
+}
+
+
+

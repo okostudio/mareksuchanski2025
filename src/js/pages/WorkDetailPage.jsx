@@ -6,6 +6,8 @@ import PageWrapper from './PageWrapper'
 import ContactUs from '../components/ContactUs'
 import { v4 as uuidv4 } from 'uuid';
 import { Analytics } from "@vercel/analytics/react"
+import PageTransition from '../components/PageTransition'
+import Button from '../elements/Button'
 
 
 function WorkDetailPage() {
@@ -44,11 +46,25 @@ function WorkDetailPage() {
                         </div>
                         <img src={pageData.mainImage.desktop} alt={pageData.jobName} className='img-cover' />
 
+                        {
+                            pageData.website ?
+
+                                <div className='padding-top'>
+                                    <Button
+                                        to={pageData.website}
+                                        class="red"
+                                    >View live site</Button>
+                                </div>
+
+                                : null
+                        }
+
                     </Section>
                     <ContactUs />
                     <Analytics />
                 </>
                 : null}
+            <PageTransition />
         </PageWrapper>
     )
 }

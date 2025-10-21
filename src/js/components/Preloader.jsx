@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useRef } from 'react'
 
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -9,7 +9,11 @@ gsap.registerPlugin(useGSAP, ScrollTrigger, DrawSVGPlugin);
 
 
 // import React from "react";
-const Preloader = () => {
+const Preloader = (props) => {
+
+    // black background
+    const { isBlack } = props;
+
     const loaderRef = useRef();
     useGSAP(
         () => {
@@ -79,7 +83,7 @@ const Preloader = () => {
     )
 
     return (
-        <section className="section__loader black" ref={loaderRef}>
+        <section className={`section__loader ${isBlack ? "black" : ""}`} ref={loaderRef}>
             <div className="flex centred" >
                 <MLoaderIcon />
             </div>

@@ -3,12 +3,14 @@ const PageData = {
         {
             url: "secret-suppers",
             jobName: "Secret Suppers Website",
+            brand: "Red Rock Deli",
+            client: "Isobar",
+            website: "https://rrd-secret-suppers-2025.vercel.app/",
+
             mainImage: {
                 desktop: "/img/work/rrd/rrd-01.jpg",
                 mobile: "/img/work/rrd/rrd-01.jpg"
             },
-            brand: "Red Rock Deli",
-            client: "Isobar",
             description: {
                 short: "Full ownership of React build and deployment",
                 long: [
@@ -30,6 +32,7 @@ const PageData = {
             brand: "Momatu",
             jobName: "Family memory timelines",
             client: "Isobar",
+            website: "https://momatu-canvas.vercel.app/",
 
             mainImage: {
                 desktop: "/img/work/momatu/momatu-01.jpg",
@@ -54,12 +57,15 @@ const PageData = {
         {
             url: "praise-or-haze",
             jobName: "Praise or Haze Trump",
+            brand: "WiTH Collective",
+            client: "WiTH Collective",
+            website: "",
+
             mainImage: {
                 desktop: "/img/work/praise-or-haze-trump/trump-01.png",
                 mobile: "/img/work/praise-or-haze-trump/trump-01.png"
             },
-            brand: "Praise or Haze Trump",
-            client: "WiTH Collective",
+
             description: {
                 short: "Front-end development of Awwward winning website. illustration",
                 long: [
@@ -76,6 +82,89 @@ const PageData = {
                 }
             ]
         },
+        {
+            url: "dcdojo",
+            brand: "Dentsu Creative",
+            jobName: "DC Dojo",
+            client: "Dentsu Creative",
+            website: "https://www.dcdojo.nz/",
+
+            mainImage: {
+                desktop: "/img/work/dcdojo/dojo-01.jpg",
+                mobile: "/img/work/dcdojo/dojo-01.jpg"
+            },
+            description: {
+                short: "Complete build from start to deployment",
+                long: [
+                    {
+                        type: "p", text: `React + GSAP + Vercel.`
+                    },
+                    {
+                        type: "p", text: `I was given complete ownership of build as well as some asset creation.`
+                    }
+                ]
+            },
+            images: [
+                {
+                    url: "/img/work/dcdojo/dojo-01.jpg",
+                    title: "",
+                    description: ""
+                }
+            ]
+        },
+        {
+            url: "head-interactive",
+            brand: "OKO Studio",
+            jobName: "3D Interactive",
+            client: "OKO Studio",
+
+            mainImage: {
+                desktop: "/img/work/oko/oko-01.jpg",
+                mobile: "/img/work/oko/oko-01.jpg"
+            },
+            description: {
+                short: "ThreeJS interactive experience",
+                long: [
+                    {
+                        type: "p", text: `This page is still under construcion. Please stay tuned.`
+                    }
+                ]
+            },
+            images: [
+                {
+                    url: "/img/work/oko/oko-01.jpg",
+                    title: "",
+                    description: ""
+                }
+            ]
+        },
+        {
+            url: "mitsubishi",
+            brand: "Mitsubishi",
+            jobName: "ASX Pitch",
+            client: "Dentsu Creative",
+            website: "",
+
+            mainImage: {
+                desktop: "/img/work/mitsubishi_pitch.jpg",
+                mobile: "/img/work/mitsubishi_pitch.jpg"
+            },
+            description: {
+                short: "Animation and design",
+                long: [
+                    { type: "p", text: `I was tasked with creating 2D and 3D animations as well as supporting graphics for a pitch to win Mitrubishi for Dentsu Creative.` },
+                    { type: "p", text: `Ultimately the pitch wasn't successful, however my animations and elements were a hit. Some elements have been used in multiple future pitches and events.` }
+                ]
+            },
+            images: [
+                {
+                    url: "/img/work/mitsubishi_pitch.jpg",
+                    title: "",
+                    description: ""
+                }
+            ]
+        },
+
         {
             url: "enviz",
             brand: "Enviz",
@@ -97,57 +186,6 @@ const PageData = {
             images: [
                 {
                     url: "/img/work/enviz-module.jpg",
-                    title: "",
-                    description: ""
-                }
-            ]
-        },
-        {
-            url: "mitsubishi",
-            brand: "Mitsubishi",
-            jobName: "ASX Pitch",
-            client: "Dentsu Creative",
-
-            mainImage: {
-                desktop: "/img/work/mitsubishi_pitch.jpg",
-                mobile: "/img/work/mitsubishi_pitch.jpg"
-            },
-            description: {
-                short: "Animation and design",
-                long: [
-                    { type: "p", text: `I was tasked with creating 2D and 3D animations as well as supporting graphics for a pitch to win Mitrubishi for Dentsu Creative.` },
-                    { type: "p", text: `Ultimately the pitch wasn't successful, however my animations and elements were a hit. Some elements have been used in multiple future pitches and events.` }
-                ]
-            },
-            images: [
-                {
-                    url: "/img/work/mitsubishi_pitch.jpg",
-                    title: "",
-                    description: ""
-                }
-            ]
-        },
-        {
-            url: "head-interactive",
-            brand: "OKO Studio",
-            jobName: "3D Interactive",
-            client: "OKO Studio",
-
-            mainImage: {
-                desktop: "/img/work/3d-head.jpg",
-                mobile: "/img/work/3d-head-mobile.jpg"
-            },
-            description: {
-                short: "ThreeJS interactive experience",
-                long: [
-                    {
-                        type: "p", text: `This page is still under construcion. Please stay tuned.`
-                    }
-                ]
-            },
-            images: [
-                {
-                    url: "/img/work/3d-head.jpg",
                     title: "",
                     description: ""
                 }

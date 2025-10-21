@@ -103,8 +103,8 @@ const Hero = (props) => {
                             <Line>designer</Line>
                         </h1>
                         <p className='p1'>
-                            <Line>Experience spanning 17 years</Line><br />
-                            <Line>across world leading brands and agencies</Line>
+                            <Line>17+ years experience</Line><br />
+                            <Line>across world leading agencies and brands</Line>
                         </p>
 
                         <div className="card">
