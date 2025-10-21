@@ -8,10 +8,13 @@ const About = () => {
             <div className="container center">
                 <div>
                     <ScrollContainer>
+                        <h2 className="xl">Marek Suchanski</h2>
                         <h3 className="">
-                            Creative developer with 17+ years of delivering rich, interactive experiences for leading agencies and global brands.
+                            Has been making rich, interactive experiences for leading agencies and global brands for over 17 years.
                             Delivering modern javascript, with an eye for motion and optimisation.
-                            Trusted by several of Australia and New Zealand’s top agencies, with long spanning partnerships based on speed, precision and reliability.
+                        </h3>
+                        <h3>
+                            Trusted by Australia & New Zealand’s top agencies, with long spanning partnerships based on speed, precision and reliability.
                         </h3>
                     </ScrollContainer>
                     <OurBrands />

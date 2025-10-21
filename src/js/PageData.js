@@ -163,8 +163,16 @@ const PageData = {
                     description: ""
                 }
             ]
-        },
-
+        }
+    ],
+    workArchive: [
+        // 
+        // 
+        // 
+        // ------ CUT OFF FOR 6 ITEMS
+        // 
+        // 
+        // 
         {
             url: "enviz",
             brand: "Enviz",
@@ -191,9 +199,6 @@ const PageData = {
                 }
             ]
         },
-
-
-        // ------ CUT OFF FOR 6 ITEMS
         {
             url: "ziwi-freeze-dried",
             jobName: "Freeze Dried",
@@ -270,7 +275,6 @@ const PageData = {
                 }
             ]
         },
-
     ]
 
 }

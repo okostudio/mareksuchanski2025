@@ -15,6 +15,7 @@ const PageTransition = (props) => {
     useGSAP(
         () => {
             gsap.context(() => {
+
                 const tl = gsap.timeline({
                     // scrollTrigger: {
                     //     trigger: scrollAnimation.current,
@@ -36,6 +37,11 @@ const PageTransition = (props) => {
                         ease: "power4.inOut"
                     }, "-=1.01")
                     .addLabel("end")
+
+                // pass reference to timeline to parent
+                if (props.setTimeline) {
+                    props.setTimeline(tl)
+                }
             }, loaderRef)
         }
         , [loaderRef]

@@ -12,7 +12,7 @@ function WorkPage() {
         <>
             <Nav />
 
-            <Work />
+            <Work displayCount={6} />
 
             <ContactUs />
             <Footer />

@@ -126,3 +126,20 @@
         }
     }
 }
+
+.work-nav-button {
+    width: 100%;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+
+    &:last-child {
+        text-align: right;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
