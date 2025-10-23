@@ -49,8 +49,8 @@ const OurBrands = () => {
     )
 
     return (
-        <section className="our-brands light">
-            <div className="container center">
+        <div className="our-brands light">
+            <div className="center">
                 <div>
                     <div className="brands">
                         <h3>
@@ -108,7 +108,7 @@ const OurBrands = () => {
                     </div>
                 </div>
             </div>
-        </section >
+        </div >
     );
 };
 

@@ -52,30 +52,30 @@ const Preloader = (props) => {
                     }, "-=0.8")
                     .from(".m-outline rect", {
                         rotation: -180,
-                        duration: 1,
+                        duration: 0.75,
                         ease: "Linear.easeNone"
                     }, 0)
                     .to(".m-outline rect", {
                         opacity: 0,
-                        duration: 1,
+                        duration: 0.75,
                         ease: "Power4.in"
-                    }, 1)
+                    }, 0.75)
                     .to(loaderRef.current, {
-                        duration: 1.01,
+                        duration: 0.99,
                         y: "-100%",
                         display: "none",
                         ease: "power4.inOut"
-                    }, "-=1")
+                    }, "-=0.9")
                     .to(".rounded-end", {
-                        duration: 1.01,
+                        duration: 0.99,
                         scaleY: 0,
                         ease: "power4.inOut"
-                    }, "-=1.01")
+                    }, "-=0.99")
                     .to(".section__loader .flex", {
-                        duration: 1.01,
+                        duration: 0.99,
                         y: "35vh",
                         ease: "power4.inOut"
-                    }, "-=1.01")
+                    }, "-=0.99")
                     .addLabel("end")
             }, loaderRef)
         }

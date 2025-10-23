@@ -17,6 +17,10 @@
         }
     }
 
+    @media (min-width: 728px) {
+        padding: 4em 4em;
+    }
+
     .description {
         margin: 4em 0 2em 0;
         text-align: left;
@@ -43,7 +47,7 @@
         z-index: 20;
 
 
-        @media (min-width: 768px) {
+        @media (min-width: 1280px) {
             grid-template-columns: repeat(2, 1fr);
             grid-column-gap: 24px;
             grid-row-gap: 48px;
@@ -112,8 +116,8 @@
 
                     @media (min-width: 768px) {
                         img {
-                            -webkit-transform: scale(1.02);
-                            transform: scale(1.02);
+                            -webkit-transform: scale(1.01);
+                            transform: scale(1.01);
                             filter: saturate(1);
                         }
                     }

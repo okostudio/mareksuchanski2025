@@ -5,18 +5,19 @@ import OurBrands from "./Brands";
 const About = () => {
     return (
         <section className="about light heightAuto" >
-            <div className="container center">
+            <div className="container">
                 <div>
-                    <ScrollContainer>
-                        <h2 className="xl">Marek Suchanski</h2>
-                        <h3 className="">
-                            Has been making rich, interactive experiences for leading agencies and global brands for over 17 years.
-                            Delivering modern javascript, with an eye for motion and optimisation.
-                        </h3>
-                        <h3>
-                            Trusted by Australia & New Zealand’s top agencies, with long spanning partnerships based on speed, precision and reliability.
-                        </h3>
-                    </ScrollContainer>
+                    {/* <ScrollContainer> */}
+                    <h2 className="xl">MAREK <br />
+                        SUCHANSKI</h2>
+                    <p className="xl">
+                        has been making rich, interactive experiences for leading agencies and global brands for over 17 years.
+                        Delivering modern javascript, with an eye for motion and optimisation.
+                    </p>
+                    <p className="xl">
+                        Trusted by Australia & New Zealand’s top agencies, with long spanning partnerships founded on speed, precision and reliability.
+                    </p>
+                    {/* </ScrollContainer> */}
                     <OurBrands />
                 </div>
             </div>
