@@ -51,7 +51,7 @@ const Hero = (props) => {
                         end: '100%',
                         pin: true,
                         // anticipatePin: 1,
-                        markers: true,
+                        // markers: true,
                         scrub: 2,
                     }
                 })
