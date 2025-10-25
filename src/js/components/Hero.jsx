@@ -1,25 +1,35 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 
-import { CustomEase } from "gsap/CustomEase";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-/* The following plugins are Club GSAP perks */
-import { DrawSVGPlugin } from "../plugins/DrawSVGPlugin.js";
 import { SplitText } from "../plugins/SplitText.js";
 
-
-gsap.registerPlugin(useGSAP, ScrollTrigger, DrawSVGPlugin, SplitText, CustomEase);
-
-// import ScrollContainer from "../animation/ScrollContainer";
+gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
 // import React from "react";
 const Hero = (props) => {
+    // TODO this iscrude, fix later
+    const isMobile = window.innerWidth < 768
+
+    const [showVideo, setShowVideo] = useState(false)
 
     const heroRef = useRef();
-    const contactRef = props.contactRef
+    const videoOverlayRef = useRef();
+    const contactRef = props.contactRef;
+
+    const toggleVideo = (bool) => {
+        setShowVideo(bool)
+        if (videoOverlayRef && videoOverlayRef.current) {
+
+            if (bool) {
+                videoOverlayRef.current.play()
+            }
+
+        }
+    }
+
 
     const slideToContact = () => {
         console.log("what", contactRef, contactRef.current)
@@ -37,15 +47,20 @@ const Hero = (props) => {
                 gsap.timeline({
                     scrollTrigger: {
                         trigger: heroRef.current,
-                        start: 'top 30%',
-                        end: 'bottom center',
-                        // markers: true,
-                        scrub: true,
+                        start: 'top top',
+                        end: '100%',
+                        pin: true,
+                        // anticipatePin: 1,
+                        markers: true,
+                        scrub: 2,
                     }
                 })
                     .addLabel("start")
-                    .from(".video-holder video", { scale: 1.5, duration: 2, ease: "sine.inOut" })
-                    .from(".video-holder", { y: "-33vh", opacity: 0.8, duration: 2, ease: "sine.out" }, "<0")
+                    .to(".hero-top-layer", { y: "-100vh", duration: 1, ease: "linear" })
+                    .from(".video-holder", { opacity: 0.6, duration: 2, ease: "sine.Out" }, "<0")
+
+                    .to(".video-holder", { padding: isMobile ? "1em" : "3em 4em 3 4em", duration: 1, ease: "sine.inout" }, "<1")
+                    .from(".video-holder button", { y: "100%", duration: 0.25, ease: "sine.Out" }, "<0")
 
             }, heroRef)
         }
@@ -53,7 +68,7 @@ const Hero = (props) => {
     )
 
     return (
-        <section className="hero" ref={heroRef}>
+        <section className="hero light" ref={heroRef}>
             <div className="hero-top-layer">
                 <div className="container">
                     <div className="left-col">
@@ -70,7 +85,7 @@ const Hero = (props) => {
                             </div>
 
                             <div className="card">
-                                <button className='black' onClick={slideToContact}>Get&nbsp;in&nbsp;touch</button>
+                                <button className='white border-black' onClick={slideToContact}>Get&nbsp;in&nbsp;touch</button>
                             </div>
                         </div>
                     </div>
@@ -94,10 +109,37 @@ const Hero = (props) => {
                         <img src="/video/showreel_2025_mobile.gif" className='hero-video-fallback' alt="okokokokoko" />
 
                 }
+                <div className="button-holder"
+                    onClick={() => { toggleVideo(true) }}
 
+                >
+                    <div className="overflow-hidden">
+                        <button className="red inverted">View reel</button>
+                    </div>
+                </div>
             </div>
 
-        </section>
+            {
+                showVideo
+                    ?
+
+                    <section className='video-overlay black'>
+                        <video ref={videoOverlayRef} playsInline loop controls autoPlay preload='true' poster={"/video/showreel_2025.jpg"}>
+                            <source src="/video/showreel_2025-xl.mp4" type="video/mp4" />
+                            <source src="/video/showreel_2025-xl.webm" type="video/webm" />
+                        </video>
+                        <div className="button-close"
+                            onClick={() => { toggleVideo(!showVideo) }}
+                        >
+                            x
+                        </div>
+                    </section>
+
+                    :
+                    null
+            }
+
+        </section >
     );
 };
 

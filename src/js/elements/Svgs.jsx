@@ -46,6 +46,40 @@ export const MLoaderIcon = () => {
     )
 }
 
+export const EmailButtonIcon = () => {
+    return (
+        <svg className="email-button-icon" width="70" height="50" viewBox="0 0 70 50">
+            <g className="email-paths">
+                <path className="red" d="M5,5h59.08c.51,0,.92.41.92.92v38.17c0,.51-.41.92-.92.92H5.92c-.51,0-.92-.41-.92-.92V12.21c0-.82.99-1.22,1.56-.65l26.79,24.79c.36.36.94.36,1.29,0l22.35-23.35" />
+                <path className="green" d="M5,5h59.08c.51,0,.92.41.92.92v38.17c0,.51-.41.92-.92.92H5.92c-.51,0-.92-.41-.92-.92V12.21c0-.82.99-1.22,1.56-.65l26.79,24.79c.36.36.94.36,1.29,0l22.35-23.35" />
+                <path className="black" d="M5,5h59.08c.51,0,.92.41.92.92v38.17c0,.51-.41.92-.92.92H5.92c-.51,0-.92-.41-.92-.92V12.21c0-.82.99-1.22,1.56-.65l26.79,24.79c.36.36.94.36,1.29,0l22.35-23.35" />
+            </g>
+            <g className="close-paths">
+                <g className="close-x1">
+                    <path className="red" d="M15,5l40,40Z" />
+                    <path className="green" d="M15,5l40,40Z" />
+                    <path className="white" d="M15,5l40,40Z" />
+                </g>
+                <g className="close-x2">
+                    <path className="red" d="M15,45L55,5Z" />
+                    <path className="green" d="M15,45L55,5Z" />
+                    <path className="white" d="M15,45L55,5Z" />
+                </g>
+
+            </g>
+        </svg>
+    )
+}
+
+export const LogoBadge = () => {
+    return (
+        <svg className="logo" width="47" height="52" viewBox="0 0 47 52">
+            <path className="badge" d="M46.25.7H.75v38.52c0,3.02,1.98,5.69,4.89,6.58l17.86,5.5,17.86-5.5c2.91-.9,4.89-3.56,4.89-6.58V.7Z" />
+            <path className="logo-m" d="M40.71,6.9l-1.9,2.6.05,30.85h-12.45v-.3l2.7-2.6-.05-23.6h-.3l-8.35,20.55h-.55L10.01,14.3h-.25v3.35c0,5.23.77,9.63,2.32,13.2,1.55,3.57,3.93,6.65,7.12,9.25v.25h-10.55V11.9l-2.8-5v-.3l10.8-.1,7.25,15.3h.25l6.1-15.2h10.45v.3Z" />
+        </svg>
+    )
+}
+
 export const RoundEndNegative = () => {
     return (
         <svg width="1000" height="250" viewBox="0 0 1000 250">

@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 // import ContactUs from '../components/ContactUs'
 import { useEffect, useRef } from 'react'
 import { useMouse } from '../hooks/UseMouse'
+import Logo from '../components/Logo';
 
 function PageWrapper(props) {
     const { mousePosition, mouseMovement } = useMouse();
@@ -28,6 +29,7 @@ function PageWrapper(props) {
             {props.children}
 
             <Footer />
+            <Logo />
             <div className="noise"></div>
             <div className="cursor" ref={cursor}></div>
         </>

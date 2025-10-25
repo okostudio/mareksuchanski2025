@@ -24,6 +24,11 @@ button {
     &.red {
         background: $red;
         border: 2px solid $red;
+
+        &.inverted {
+            background: rgba($white, 0.05);
+            color: $red;
+        }
     }
 
     &.black {
@@ -37,12 +42,23 @@ button {
         color: $black;
     }
 
+    &.border-black {
+        border-color: $black;
+    }
+
     &:hover {
         background: rgba($white, 0.05);
         color: $green;
 
         &.red {
+            background: $red;
             color: $red;
+
+            &.inverted {
+                background: $red;
+                border: 2px solid $red;
+                color: $white;
+            }
         }
 
         &.black {
@@ -52,6 +68,38 @@ button {
         &.white {
             background: $black;
             color: $white;
+
+            &.border-black {
+                border-color: $white;
+            }
         }
+    }
+}
+
+
+// email SVG button
+.email-button-icon {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 4px;
+    width: auto;
+    height: 20px;
+    padding: 10px 10px;
+
+    .white {
+        stroke: $white;
+    }
+
+    .red {
+        stroke: $red;
+    }
+
+    .green {
+        stroke: $green;
+    }
+
+    .black {
+        stroke: $black;
     }
 }

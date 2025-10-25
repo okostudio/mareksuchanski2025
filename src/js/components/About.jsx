@@ -1,4 +1,3 @@
-import ScrollContainer from "../animation/ScrollContainer";
 import OurBrands from "./Brands";
 
 
