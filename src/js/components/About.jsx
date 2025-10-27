@@ -24,6 +24,7 @@ const About = () => {
                 gsap.timeline({
                     scrollTrigger: {
                         trigger: aboutRef.current,
+                        normalizeScroll: true,
                         start: '-60%',
                         end: 'bototm 20%',
                         pin: false,

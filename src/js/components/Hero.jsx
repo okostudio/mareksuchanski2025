@@ -47,6 +47,7 @@ const Hero = (props) => {
                 gsap.timeline({
                     scrollTrigger: {
                         trigger: heroRef.current,
+                        normalizeScroll: true,
                         start: 'top top',
                         end: '100%',
                         pin: true,
