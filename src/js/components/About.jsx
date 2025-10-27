@@ -29,7 +29,7 @@ const About = () => {
                         end: 'bototm 20%',
                         pin: false,
                         // anticipatePin: 1,
-                        markers: true,
+                        // markers: true,
                         scrub: 2,
                     }
                 })
