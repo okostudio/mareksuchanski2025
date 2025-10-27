@@ -46,6 +46,10 @@ button {
         border-color: $black;
     }
 
+    &.border-white {
+        border-color: $white;
+    }
+
     &:hover {
         background: rgba($white, 0.05);
         color: $green;
@@ -63,6 +67,11 @@ button {
 
         &.black {
             color: $black;
+
+            &.border-white {
+                background-color: $white;
+                border-color: $white;
+            }
         }
 
         &.white {

@@ -10,4 +10,13 @@
         margin: 1em 0 0.25em 0;
         text-align: left;
     }
+
+    @media (max-width: 767px) {
+        justify-content: space-between;
+        padding-top: 0;
+
+        h2 {
+            margin: 0em 0 0.25em 0;
+        }
+    }
 }

@@ -8,7 +8,10 @@
         margin-bottom: 2em;
     }
 
+    background-color: $light !important;
+
     .video-holder {
+        background-color: $light;
         position: absolute;
         width: 100%;
         height: 102vh;
@@ -60,8 +63,8 @@
 
     .hero-top-layer {
         z-index: 2;
-        background-color: $white;
-        mix-blend-mode: lighten;
+        background-color: $black;
+        mix-blend-mode: multiply;
         flex-flow: column;
         justify-content: center;
         align-items: stretch;

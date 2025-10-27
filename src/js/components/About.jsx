@@ -17,8 +17,10 @@ const About = () => {
                         Trusted by Australia & New Zealand’s top agencies, with long spanning partnerships founded on speed, precision and reliability.
                     </p>
                     {/* </ScrollContainer> */}
-                    <OurBrands />
                 </div>
+            </div>
+            <div className="container">
+                <OurBrands />
             </div>
         </section >
     );

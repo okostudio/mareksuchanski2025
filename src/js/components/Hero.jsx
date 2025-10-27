@@ -57,10 +57,9 @@ const Hero = (props) => {
                 })
                     .addLabel("start")
                     .to(".hero-top-layer", { y: "-100vh", duration: 1, ease: "linear" })
-                    .from(".video-holder", { opacity: 0.6, duration: 2, ease: "sine.Out" }, "<0")
-
-                    .to(".video-holder", { padding: isMobile ? "1em" : "3em 4em 3 4em", duration: 1, ease: "sine.inout" }, "<1")
+                    .to(".video-holder", { padding: isMobile ? "2em 1em" : "3em 4em 3 4em", duration: 1, ease: "sine.inout" }, "<1")
                     .from(".video-holder button", { y: "100%", duration: 0.25, ease: "sine.Out" }, "<0")
+                    .from(".video-holder video, .video-holder img", { opacity: 0.8, duration: 0.1, ease: "sine.out" }, 0)
 
             }, heroRef)
         }
@@ -68,7 +67,7 @@ const Hero = (props) => {
     )
 
     return (
-        <section className="hero light" ref={heroRef}>
+        <section className="hero black" ref={heroRef}>
             <div className="hero-top-layer">
                 <div className="container">
                     <div className="left-col">
@@ -85,7 +84,7 @@ const Hero = (props) => {
                             </div>
 
                             <div className="card">
-                                <button className='white border-black' onClick={slideToContact}>Get&nbsp;in&nbsp;touch</button>
+                                <button className='black border-white' onClick={slideToContact}>Get&nbsp;in&nbsp;touch</button>
                             </div>
                         </div>
                     </div>
