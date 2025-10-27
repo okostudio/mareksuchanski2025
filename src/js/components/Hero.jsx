@@ -57,6 +57,7 @@ const Hero = (props) => {
                 })
                     .addLabel("start")
                     .to(".hero-top-layer", { y: "-100vh", duration: 1, ease: "linear" })
+                    .to(".hero-top-layer .line, .hero-top-layer button", { y: "-100%", duration: 0.5, stagger: 0.1, ease: "power3.in" }, "<-0.6")
                     .to(".video-holder", { padding: isMobile ? "2em 1em" : "3em 4em 3 4em", duration: 1, ease: "sine.inout" }, "<1")
                     .from(".video-holder button", { y: "100%", duration: 0.25, ease: "sine.Out" }, "<0")
                     .from(".video-holder video, .video-holder img", { opacity: 0.8, duration: 0.1, ease: "sine.out" }, 0)
@@ -83,7 +84,7 @@ const Hero = (props) => {
                                 <Line>17+ years experience across world leading agencies and brands</Line>
                             </div>
 
-                            <div className="card">
+                            <div className="overflow-hidden">
                                 <button className='black border-white' onClick={slideToContact}>Get&nbsp;in&nbsp;touch</button>
                             </div>
                         </div>

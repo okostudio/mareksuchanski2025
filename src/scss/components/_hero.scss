@@ -52,6 +52,16 @@
         height: 100%;
         z-index: 100;
 
+        padding: 1em;
+
+        @media (min-width: 768px) {
+            padding: 3em;
+        }
+
+        @media (min-width: 1024px) {
+            padding: 4em;
+        }
+
         .button-close {
             position: absolute;
             top: 2em;
