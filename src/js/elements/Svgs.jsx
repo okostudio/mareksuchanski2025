@@ -71,6 +71,26 @@ export const EmailButtonIcon = () => {
     )
 }
 
+export const CloseXIcon = () => {
+    return (
+        <svg className="close-x-icon" width="70" height="50" viewBox="0 0 70 50">
+            <g className="close-paths">
+                <g className="close-x1">
+                    <path className="red" d="M15,5l40,40Z" />
+                    <path className="green" d="M15,5l40,40Z" />
+                    <path className="white" d="M15,5l40,40Z" />
+                </g>
+                <g className="close-x2">
+                    <path className="red" d="M15,45L55,5Z" />
+                    <path className="green" d="M15,45L55,5Z" />
+                    <path className="white" d="M15,45L55,5Z" />
+                </g>
+
+            </g>
+        </svg>
+    )
+}
+
 export const LogoBadge = () => {
     return (
         <svg className="logo" width="47" height="52" viewBox="0 0 47 52">

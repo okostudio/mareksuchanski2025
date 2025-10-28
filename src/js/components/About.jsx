@@ -18,26 +18,27 @@ const About = () => {
     useGSAP(
         () => {
             gsap.context(() => {
+                document.fonts.ready.then(() => {
 
-                // let h1Split = SplitText.create(("h1"), { type: "words,lines", linesClass: "line line++", overflow: "hidden" });
-                let pSplit = SplitText.create(("p"), { type: "words,lines", linesClass: "line line++", overflow: "hidden" });
-                gsap.timeline({
-                    scrollTrigger: {
-                        trigger: aboutRef.current,
-                        normalizeScroll: true,
-                        start: '-60%',
-                        end: 'bototm 20%',
-                        pin: false,
-                        // anticipatePin: 1,
-                        // markers: true,
-                        scrub: 2,
-                    }
+                    // let h1Split = SplitText.create(("h1"), { type: "words,lines", linesClass: "line line++", overflow: "hidden" });
+                    let pSplit = SplitText.create(("p"), { type: "words,lines", linesClass: "line line++", overflow: "hidden" });
+                    gsap.timeline({
+                        scrollTrigger: {
+                            trigger: aboutRef.current,
+                            normalizeScroll: true,
+                            start: '-60%',
+                            end: '20%',
+                            pin: false,
+                            // anticipatePin: 1,
+                            // markers: true,
+                            scrub: 1,
+                        }
+                    })
+                        .addLabel("start")
+                        .from("h2 .line", { y: "100%", duration: 1, stagger: 0.1, ease: "power3.Out" })
+                        .from(pSplit.lines, { y: "50%", opacity: 0, duration: 1, stagger: 0.1, ease: "power3.Out" }, "<1")
+                        .pause(2)
                 })
-                    .addLabel("start")
-                    .from("h2 .line", { y: "100%", duration: 1, stagger: 0.1, ease: "power3.Out" })
-                    .from(pSplit.lines, { y: "50%", opacity: 0, duration: 1, stagger: 0.1, ease: "power3.Out" }, "<1")
-                    .pause(2)
-
 
             }, aboutRef)
         }

@@ -6,9 +6,18 @@ import { useEffect, useRef } from 'react'
 import { useMouse } from '../hooks/UseMouse'
 import Logo from '../components/Logo';
 
+
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollSmoother } from "../plugins/ScrollSmoother.js";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
+
 function PageWrapper(props) {
     const { mousePosition, mouseMovement } = useMouse();
     const cursor = useRef();
+    const scrollSmoothContentRef = useRef();
 
 
     useEffect(() => {
@@ -22,16 +31,31 @@ function PageWrapper(props) {
     }, [mousePosition, mouseMovement,])
 
 
+    useGSAP(() => {
+        ScrollSmoother.create({
+            wrapper: "#scroll-smooth-wrapper",
+            content: "#scroll-smooth-content",
+            smooth: 2,
+            smoothTouch: 0.2,
+        })
+    }, [])
+
+
     return (
         <>
             <Nav />
+            <div id='scroll-smooth-wrapper'>
+                <div id='scroll-smooth-content' ref={scrollSmoothContentRef}>
 
-            {props.children}
+                    {props.children}
 
-            <Footer />
-            <Logo />
+                    <Footer />
+
+                </div>
+            </div>
             <div className="noise"></div>
             <div className="cursor" ref={cursor}></div>
+            <Logo />
         </>
     )
 }

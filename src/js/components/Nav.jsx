@@ -37,20 +37,6 @@ const Nav = () => {
         () => {
             gsap.set(".email-button-icon .close-paths path", { display: "none" })
             gsap.from(".email-button-icon .email-paths path", { duration: 0.7, drawSVG: "0% 0%", stagger: 0.15, ease: "power2.inOut" }, 1.5)
-
-
-            // gsap.from("nav",
-            //     {
-            //         x: 70,
-            //         ease: "power2.out",
-            //         scrollTrigger: {
-            //             trigger: "nav",
-            //             scrub: true,
-            //             start: "100vh",
-            //             end: "calc(100vh + 50px)",
-            //             markers: true
-            //         }
-            //     })
         }, [navRef]
     )
 
