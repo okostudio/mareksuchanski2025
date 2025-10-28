@@ -158,13 +158,37 @@ const PageData = {
             },
             images: [
                 {
-                    url: "/img/work/mitsubishi_pitch.jpg",
+                    type: "video",
+                    url:
+                        [
+                            "/img/work/mitsubishi/asx-demo.webm",
+                            "/img/work/mitsubishi/asx-demo.mp4",
+                        ],
+                    title: "",
+                    description: ""
+                },
+                {
+                    type: "image-2col",
+                    url:
+                        [
+                            "/img/work/mitsubishi/welcome-screens.gif",
+                            "/img/work/mitsubishi/welcome-screens.gif"
+                        ],
                     title: "",
                     description: ""
                 }
             ]
         }
     ],
+
+
+
+
+
+
+
+
+
     workArchive: [
         // 
         // 

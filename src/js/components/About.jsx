@@ -27,7 +27,7 @@ const About = () => {
                             trigger: aboutRef.current,
                             normalizeScroll: true,
                             start: '-60%',
-                            end: '20%',
+                            end: '0%',
                             pin: false,
                             // anticipatePin: 1,
                             // markers: true,
