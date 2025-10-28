@@ -29,15 +29,17 @@
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
 
-  <!-- START: Mobile Autoplay Video -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9KQ1MTBEB9"></script>
   <script>
-    // var mobilevideo = document.getElementsByTagName("video")[0];
-    // mobilevideo.setAttribute("playsinline", "");
-    // mobilevideo.setAttribute("muted", "");
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-9KQ1MTBEB9');
   </script>
 
 
-  <!-- END: Mobile Autoplay Video -->
 </body>
 
 </html>
