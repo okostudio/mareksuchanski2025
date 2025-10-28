@@ -152,7 +152,7 @@ const PageData = {
             description: {
                 short: "Animation and design",
                 long: [
-                    { type: "p", text: `I was tasked with creating 2D and 3D animations as well as supporting graphics for a pitch to win Mitrubishi for Dentsu Creative.` },
+                    { type: "p", text: `I was tasked with creating 2D and 3D animations as well as supporting graphics for a pitch to win Mitsubishi for Dentsu Creative.` },
                     { type: "p", text: `Ultimately the pitch wasn't successful, however my animations and elements were a hit. Some elements have been used in multiple future pitches and events.` }
                 ]
             },
