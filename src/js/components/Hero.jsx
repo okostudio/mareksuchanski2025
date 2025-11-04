@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "../plugins/SplitText.js";
+import { ScrollPrompt } from '../elements/Svgs.jsx';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
@@ -53,8 +54,15 @@ const Hero = (props) => {
                     .addLabel("start")
                     .to(".hero-top-layer .line, .hero-top-layer button", { y: "-100%", duration: 0.15, stagger: 0.05, ease: "power3.in" }, 0)
                     .to(".hero-top-layer", { y: "-100vh", duration: 1, ease: "sine.in" }, 0)
+                    .to("#scroll-prompt-curve", { scaleY: 0, duration: 0.25, ease: "power2.inOut" }, 0)
+                    .to("#scroll-prompt-line, #scroll-prompt-arrow", { y: -25, duration: 0.25, ease: "power2.inOut" }, 0)
 
                     .from(".video-holder button", { y: "110%", duration: 0.25, ease: "sine.Out" }, 0.6)
+                    .from(".video-holder", {
+                        opacity: 0.9,
+                        duration: 0.15,
+                        ease: "sine.inOut"
+                    }, 0)
                     .to(".video-holder", {
                         y: "200vh",
                         duration: 2,
@@ -94,7 +102,9 @@ const Hero = (props) => {
                                 </div> */}
                             </div>
                         </div>
-
+                    </div>
+                    <div className="scroll-prompt-container">
+                        <ScrollPrompt class={"scroll-prompt"} />
                     </div>
                 </div>
 

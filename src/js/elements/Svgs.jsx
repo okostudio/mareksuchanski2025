@@ -125,4 +125,12 @@ export const RoundEndPositiveUp = () => {
 }
 
 
-
+export const ScrollPrompt = (props) => {
+    return (
+        <svg className={props.class ? props.class : ""} width="200" height="55" viewBox="0 0 200 55">
+            <path id="scroll-prompt-curve" className="white" d="M0,55C55,55,50,0,100,0s45,55,100,55H0Z" />
+            <path id="scroll-prompt-arrow" className="black" d="M99.47,38.85l-19.15-15.32c-.37-.29-.43-.83-.13-1.2l1.33-1.66c.29-.37.83-.43,1.2-.13l16.76,13.41c.31.25.75.25,1.06,0l16.76-13.41c.37-.29.9-.23,1.2.13l1.33,1.66c.29.37.23.9-.13,1.2l-19.15,15.32c-.31.25-.75.25-1.06,0Z" />
+            <path id="scroll-prompt-line" className="black" d="M101.23,36.83h-2.46c-.38,0-.69-.31-.69-.69V14.54c0-.38.31-.69.69-.69h2.46c.38,0,.69.31.69.69v21.61c0,.44-.31.69-.69.69Z" />
+        </svg>
+    )
+}
