@@ -36,7 +36,7 @@ const Nav = () => {
     useGSAP(
         () => {
             gsap.set(".email-button-icon .close-paths path", { display: "none" })
-            gsap.from(".email-button-icon .email-paths path", { duration: 0.7, drawSVG: "0% 0%", stagger: 0.15, ease: "power2.inOut" }, 1.5)
+            gsap.fromTo(".email-button-icon .email-paths path", { drawSVG: "0% 0%" }, { drawSVG: "0% 100%", duration: 0.7, stagger: 0.15, ease: "power2.inOut" })
         }, [navRef]
     )
 

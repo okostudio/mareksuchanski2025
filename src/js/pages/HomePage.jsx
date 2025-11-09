@@ -39,8 +39,8 @@ function HomePage() {
                     <section className='video-overlay black'>
                         <div className="video-aspect">
                             <video ref={videoOverlayRef} playsInline loop controls autoPlay preload='true' poster={"/video/showreel_2025.jpg"}>
-                                <source src="/video/showreel_2025-xl.mp4" type="video/mp4" />
-                                <source src="/video/showreel_2025-xl.webm" type="video/webm" />
+                                <source src="/video/showreel_2025-full.mp4" type="video/mp4" />
+                                <source src="/video/showreel_2025-full.webm" type="video/webm" />
                             </video>
                             <div className="button-close"
                                 onClick={() => { setShowVideo(false) }}

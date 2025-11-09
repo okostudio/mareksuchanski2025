@@ -29,7 +29,7 @@ const WorkItem = (props) => {
                     opacity: 0,
                     duration: 0.5,
                     ease: "sine.out",
-                    delay: isEven(props.index) ? 0.25 : 0.5,
+                    delay: 0.25,
                 })
                 .from(".work__item__description", {
                     opacity: 0,

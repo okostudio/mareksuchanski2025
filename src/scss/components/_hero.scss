@@ -38,6 +38,13 @@
 
             button {
                 position: relative;
+
+                border-color: white;
+
+                &:hover {
+                    border-color: black;
+
+                }
             }
         }
     }
@@ -128,7 +135,8 @@
                 height: 1.6rem;
                 width: auto;
 
-                path {
+                path,
+                g {
                     transform-origin: center bottom;
                 }
 
@@ -165,6 +173,7 @@
         aspect-ratio: calc(16/9);
         width: 100%;
         height: auto;
+        max-height: 100dvh;
         background: black;
 
         video {
@@ -173,8 +182,6 @@
             height: 100%;
         }
     }
-
-
 
     @media (min-width: 768px) {
         padding: 3em;

@@ -81,12 +81,11 @@ function WorkDetailPage() {
                                 })}
                             </div>
                         </div>
-                        <img src={pageData.mainImage.desktop} alt={pageData.jobName} className='img-cover' />
 
                         {
                             pageData.website ?
 
-                                <div className='margin-top margin-bottom'>
+                                <div className='margin-top padding-bottom margin-bottom '>
                                     <Button
                                         to={pageData.website}
                                         class="red"
@@ -95,6 +94,10 @@ function WorkDetailPage() {
 
                                 : null
                         }
+
+                        <img src={pageData.mainImage.desktop} alt={pageData.jobName} className='img-cover' />
+
+
 
                     </Section>
                     <Section class="red height-auto">

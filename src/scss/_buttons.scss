@@ -55,7 +55,7 @@ button {
         color: $green;
 
         &.red {
-            background: $red;
+            background: transparent;
             color: $red;
 
             &.inverted {
@@ -79,7 +79,7 @@ button {
             color: $white;
 
             &.border-black {
-                border-color: $white;
+                border-color: $black;
             }
         }
     }

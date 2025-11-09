@@ -54,25 +54,43 @@ const Hero = (props) => {
                     .addLabel("start")
                     .to(".hero-top-layer .line, .hero-top-layer button", { y: "-100%", duration: 0.15, stagger: 0.05, ease: "power3.in" }, 0)
                     .to(".hero-top-layer", { y: "-100vh", duration: 1, ease: "sine.in" }, 0)
-                    .to("#scroll-prompt-curve", { scaleY: 0, duration: 0.25, ease: "power2.inOut" }, 0)
-                    .to("#scroll-prompt-line, #scroll-prompt-arrow", { y: -25, duration: 0.25, ease: "power2.inOut" }, 0)
+                    .to(".scroll-prompt", { scaleX: 30, transformOrigin: "50% 100%", duration: 0.5, ease: "power2.inOut" }, 0)
+                    .to(".scroll-prompt", { scaleY: 10, transformOrigin: "50% 100%", duration: 0.5, ease: "power3.inOut" }, 0)
+                    .to("#scroll-prompt-arrow-holder", { y: 50, scale: 0, transformOrigin: "50% 100%", duration: 0.1, ease: "power2.in" }, 0)
 
-                    .from(".video-holder button", { y: "110%", duration: 0.25, ease: "sine.Out" }, 0.6)
+
                     .from(".video-holder", {
                         opacity: 0.9,
                         duration: 0.15,
                         ease: "sine.inOut"
                     }, 0)
+
+                    // show video button
+                    .from(".video-holder button", { y: "110%", duration: 0.2, ease: "sine.Out" }, 0.35)
+
+                    // animate in padding around video holder
+                    .to(".video-holder", {
+                        padding: isMobile ? "1em" : "3em 4em",
+                        duration: 0.5,
+                        ease: "sine.inOut"
+                    }, 0.6)
+                    .to(".video-holder video", {
+                        borderRadius: "0.5em",
+                        duration: 0.25,
+                        ease: "sine.inOut"
+                    }, 0.6)
+
+                    // scroll up
                     .to(".video-holder", {
                         y: "200vh",
                         duration: 2,
                         ease: "linear"
                     }, 0)
                     .to(".video-holder", {
-                        padding: isMobile ? "2em 1em" : "3em 4em 3 4em",
-                        duration: 0.75,
-                        ease: "sine.inOut"
-                    }, 1)
+                        padding: isMobile ? "1em 50vw" : "3em 50vw",
+                        duration: 0.025,
+                        ease: "sine.in"
+                    }, 1.95)
 
             }, heroRef)
         }
@@ -113,15 +131,15 @@ const Hero = (props) => {
                     {
                         (window.innerWidth > window.innerHeight * 1.3) ?
                             <video playsInline loop muted autoPlay preload='true' poster={"/video/showreel_2025.jpg"}>
-                                <source src="/video/showreel_2025-xl.mp4" type="video/mp4" />
-                                <source src="/video/showreel_2025-xl.webm" type="video/webm" />
+                                <source src="/video/showreel_2025.mp4" type="video/mp4" />
+                                <source src="/video/showreel_2025.webm" type="video/webm" />
                             </video>
                             :
-                            // <video width="100%" height="100%" playsInline loop muted autoPlay>
-                            //     <source src="/video/showreel_2025_mobile.mp4" type="video/mp4" />
-                            //     <source src="/video/showreel_2025_mobile.webm" type="video/webm" />
-                            // </video>
-                            <img src="/video/showreel_2025_mobile.gif" className='hero-video-fallback' alt="okokokokoko" />
+                            <video playsInline loop muted autoPlay preload='true' poster={"/video/showreel_2025.jpg"}>
+                                <source src="/video/showreel_2025_mobile.mp4" type="video/mp4" />
+                                <source src="/video/showreel_2025_mobile.webm" type="video/webm" />
+                            </video>
+                        // <img src="/video/showreel_2025_mobile.gif" className='hero-video-fallback' alt="okokokokoko" />
 
                     }
                     <div className="button-holder"
@@ -129,7 +147,7 @@ const Hero = (props) => {
 
                     >
                         <div className="overflow-hidden">
-                            <button className="red inverted">View reel</button>
+                            <button className="white border-black">View reel</button>
                         </div>
                     </div>
                 </div>

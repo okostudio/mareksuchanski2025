@@ -5,7 +5,7 @@ const PageData = {
             jobName: "Secret Suppers Website",
             brand: "Red Rock Deli",
             client: "Isobar",
-            website: "https://rrd-secret-suppers-2025.vercel.app/",
+            website: "https://rrd-secret-suppers-2025.vercel.app/our-range/",
 
             mainImage: {
                 desktop: "/img/work/rrd/rrd-01.jpg",
@@ -14,14 +14,20 @@ const PageData = {
             description: {
                 short: "Full ownership of React build and deployment",
                 long: [
-                    {
-                        type: "p", text: `This page is still under construcion. Please stay tuned.`
-                    }
+                    { type: "p", text: `Another ground-up build, with full control over this React build. Including complex 2D canvas based animations, creating video and design elements` },
+                    { type: "p", text: `While initially launched a few years ago, This site had was resurected by me and brought up to date for current React, Vite and Vercel deployment.` }
                 ]
             },
             images: [
                 {
-                    url: "/img/work/WPT5122_Lotus_A.jpg",
+                    type: "image",
+                    url: "/img/work/rrd/rrd-01.jpg",
+                    title: "",
+                    description: ""
+                },
+                {
+                    type: "image",
+                    url: "/img/work/rrd/rrd-02.jpg",
                     title: "",
                     description: ""
                 }
@@ -42,12 +48,16 @@ const PageData = {
                 short: "Web app development, with full ownership of build & delivery",
                 long: [
                     {
-                        type: "p", text: `This page is still under construcion. Please stay tuned.`
+                        type: "p", text: `I took full control of this prototype build. Momatu is a timeline visualisation tool, for scanning through hundreds of your photos, and comparing them against your family and friends at various points in their lives.`
+                    },
+                    {
+                        type: "p", text: `There are custom animations and interations in every corner. Search functions and transitions all built from scratch on a 2D canvas.`
                     }
                 ]
             },
             images: [
                 {
+                    type: "image",
                     url: "/img/work/momatu/momatu-01.jpg",
                     title: "",
                     description: ""
@@ -70,12 +80,17 @@ const PageData = {
                 short: "Front-end development of Awwward winning website. illustration",
                 long: [
                     {
-                        type: "p", text: `This page is still under construcion. Please stay tuned.`
+                        type: "p", text: `An award winning satirical page, which holds current to this day. Featuring real time voting on a live feed from President Trump
+                        s official twitter page, with animaitons based on your positive or negative reaction. I was involved in the front end build, and asset generation, creating dozens of custom reactions and hidden easter eggs.`
+                    },
+                    {
+                        type: "p", text: `Vue, Firebase, and lots of pixel illustration and animation.`
                     }
                 ]
             },
             images: [
                 {
+                    type: "image",
                     url: "/img/work/praise-or-haze-trump/trump-01.png",
                     title: "",
                     description: ""
@@ -106,6 +121,7 @@ const PageData = {
             },
             images: [
                 {
+                    type: "image",
                     url: "/img/work/dcdojo/dojo-01.jpg",
                     title: "",
                     description: ""
@@ -126,12 +142,13 @@ const PageData = {
                 short: "ThreeJS interactive experience",
                 long: [
                     {
-                        type: "p", text: `This page is still under construcion. Please stay tuned.`
+                        type: "p", text: `A ThreeJS experience, using React Three Fibre and deployed on Vercel.`
                     }
                 ]
             },
             images: [
                 {
+                    type: "image",
                     url: "/img/work/oko/oko-01.jpg",
                     title: "",
                     description: ""
@@ -146,8 +163,8 @@ const PageData = {
             website: "",
 
             mainImage: {
-                desktop: "/img/work/mitsubishi_pitch.jpg",
-                mobile: "/img/work/mitsubishi_pitch.jpg"
+                desktop: "/img/work/mitsubishi/asx-demo.jpg",
+                mobile: "/img/work/mitsubishi/asx-demo.jpg"
             },
             description: {
                 short: "Animation and design",
@@ -157,6 +174,13 @@ const PageData = {
                 ]
             },
             images: [
+                {
+                    type: "image",
+                    url:
+                        "/img/work/mitsubishi/asx-demo.jpg",
+                    title: "",
+                    description: ""
+                },
                 {
                     type: "video",
                     url:
