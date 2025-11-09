@@ -5,7 +5,7 @@ const PageData = {
             jobName: "Secret Suppers Website",
             brand: "Red Rock Deli",
             client: "Isobar",
-            website: "https://rrd-secret-suppers-2025.vercel.app/our-range/",
+            website: "https://rrd-secret-suppers-2025.vercel.app/",
 
             mainImage: {
                 desktop: "/img/work/rrd/rrd-01.jpg",
