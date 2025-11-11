@@ -55,7 +55,7 @@ const Hero = (props) => {
                     .to(".hero-top-layer .line, .hero-top-layer button", { y: "-100%", duration: 0.15, stagger: 0.05, ease: "power3.in" }, 0)
                     .to(".hero-top-layer", { y: "-100vh", duration: 1, ease: "sine.in" }, 0)
                     .to(".scroll-prompt", { scaleX: 30, transformOrigin: "50% 100%", duration: 0.5, ease: "power2.inOut" }, 0)
-                    .to(".scroll-prompt", { scaleY: 10, transformOrigin: "50% 100%", duration: 0.5, ease: "power3.inOut" }, 0)
+                    .to(".scroll-prompt", { scaleY: 10, y: 1, transformOrigin: "50% 100%", duration: 0.5, ease: "power3.inOut" }, 0)
                     .to("#scroll-prompt-arrow-holder", { y: 50, scale: 0, transformOrigin: "50% 100%", duration: 0.1, ease: "power2.in" }, 0)
 
 
