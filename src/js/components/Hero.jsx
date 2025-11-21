@@ -58,7 +58,6 @@ const Hero = (props) => {
                     .to(".scroll-prompt", { scaleY: 10, y: 1, transformOrigin: "50% 100%", duration: 0.5, ease: "power3.inOut" }, 0)
                     .to("#scroll-prompt-arrow-holder", { y: 50, scale: 0, transformOrigin: "50% 100%", duration: 0.1, ease: "power2.in" }, 0)
 
-
                     .from(".video-holder", {
                         opacity: 0.9,
                         duration: 0.15,

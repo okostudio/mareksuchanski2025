@@ -1,4 +1,4 @@
-import OurBrands from "./Brands";
+// import OurBrands from "./Brands";
 import { useRef } from 'react';
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -64,9 +64,11 @@ const About = () => {
                     {/* </ScrollContainer> */}
                 </div>
             </div>
-            <div className="container">
+            {/*
+<div className="container">
                 <OurBrands />
             </div>
+            */}
         </section >
     );
 };
